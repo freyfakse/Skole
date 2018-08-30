@@ -1,0 +1,8 @@
+@* View Component view. Shows all articles using the small article partial view. *@
+
+@model IEnumerable<Models.Article>
+
+@foreach (var a in Model)
+{
+    Html.RenderPartial("_ArticleSmall", a);
+}

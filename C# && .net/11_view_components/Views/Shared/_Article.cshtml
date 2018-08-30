@@ -1,0 +1,12 @@
+@* Renders a single article as a partial view *@
+
+@model Models.Article
+
+<h1>@Model.Title</h1>
+
+<figure>
+    <img src="@Model.Image">
+    <figcaption>@Model.Summary</figcaption>
+</figure>
+
+<p>@Model.Body</p>

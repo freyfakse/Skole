@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+
+@* Renders a list of articles using the ArticlesList View Component *@
+@(await Component.InvokeAsync<ViewComponents.ArticlesList>(2))

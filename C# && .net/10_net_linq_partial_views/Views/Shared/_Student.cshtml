@@ -1,0 +1,14 @@
+@model Example.Models.Student
+
+<tr>
+    <td>@Model.FirstName</td>
+    <td>@Model.LastName</td>
+    <td>
+        <ul>
+            @foreach(var g in Model.Grades)
+            {
+                <li>@g.Course - @g.Grade</li>
+            }
+        </ul>
+    </td>
+</tr>

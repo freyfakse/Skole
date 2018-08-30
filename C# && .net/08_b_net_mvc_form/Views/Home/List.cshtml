@@ -1,0 +1,9 @@
+@* This view receives a list of items *@
+@model IEnumerable<Models.Student>
+
+@foreach(var s in Model)
+{
+    @* It then sends each individual student to a partial view. *@
+    @* This partial view is located in Shared/_Student.cshtml *@
+    Html.RenderPartial("_Student", s);
+}

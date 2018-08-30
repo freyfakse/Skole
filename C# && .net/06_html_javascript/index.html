@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- See http://www.w3schools.com/css/css_rwd_viewport.asp for viewport details -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <title>sample</title>
+
+  <!-- Show how to use an inline script Not recommended because it mixes HTML and JavaScript. -->
+  <script>
+	<!-- Old style JavaScript using getElementById. Not recommended as it's very verbose. -->
+    function buttonInlineJS() {
+      document.getElementById('textOutput').innerHTML = document.getElementById('textInput').value;
+    }
+
+    function buttonInlineJQuery() {
+      $('#textOutput').text($('#textInput').val());
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>JavaScript examples</h1>
+    <div class="row">
+      <h2>Read text from here</h2>
+      <div class="form-inline">
+        <input type="text" class="form-control" id="textInput">
+        <!-- Two buttons with onclick handlers. Not recommended because it mixes HTML and JavaScript. -->
+        <button type="button" class="btn btn-primary" onclick="buttonInlineJS()">Inline JS</button>
+        <button type="button" class="btn btn-primary" onclick="buttonInlineJQuery()">Inline jQuery</button>
+        
+        <!--
+          Button without onclick handler, cleaner. Handler is configured in script.js.
+          Recommended because it seperates HTML (content) from JavaScript (functionality).
+         -->
+        <button id="btnUpdate" type="button" class="btn btn-primary">External jQuery</button>
+      </div>
+    </div>
+    <div class="row">
+      <h2>Use the text here</h2>
+      <!-- We change the content of this span using JavaScript when the buttons are clicked -->
+      The current text is <em><span id="textOutput">not set</span></em>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

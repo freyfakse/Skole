@@ -1,0 +1,32 @@
+@model IEnumerable<Example.Models.Student>
+
+<h1>Search</h1>
+
+<div class="row">
+    <form class="form-inline">
+        <input type="text" class="form-control" name="search" value="@ViewBag.Search">
+        <input type="submit" class="btn btn-primary" value="Search">
+    </form>
+</div>
+
+<h1>List</h1>
+
+<div class="row">
+    <table class="table table-striped">
+
+        <tr>
+            <th><a asp-controller="Home" asp-route-sort="FirstName" asp-route-search="@ViewBag.Search">First Name</a></th>
+            <th><a asp-controller="Home" asp-route-sort="LastName" asp-route-search="@ViewBag.Search">Last Name</a></th>
+            <th>Grades</th>
+        </tr>
+
+    @foreach(var s in Model)
+    {
+        foreach(var g in s.Grades)
+        {
+            Html.RenderPartial("_Student", s);
+        }
+    }
+
+    </table>
+</div>

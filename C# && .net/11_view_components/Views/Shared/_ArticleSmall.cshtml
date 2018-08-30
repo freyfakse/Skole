@@ -1,0 +1,11 @@
+@* Shows the title of an article together with a clickable image to the full article *@
+
+@model Models.Article
+
+<h3>@Model.Title</h3>
+
+<div class="panel panel-default ">
+    <a asp-route-id="@Model.Id">
+        <img src="@Model.Image">
+    </a>
+</div>
