@@ -1,0 +1,8 @@
+user ping
+topic readwrite dat235/pingpong
+
+user pong
+topic readwrite dat235/pingpong
+
+user pang
+topic read dat235/pingpong
