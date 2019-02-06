@@ -1,0 +1,199 @@
+\hypertarget{class_shooting___mechanic}{}\section{Shooting\+\_\+\+Mechanic Class Reference}
+\label{class_shooting___mechanic}\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+
+
+{\ttfamily \#include $<$Shooting\+\_\+\+Mechanic.\+h$>$}
+
+Inheritance diagram for Shooting\+\_\+\+Mechanic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_shooting___mechanic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shooting___mechanic_a2c1defa547e5b53d057a5296d6776107}{Shooting\+\_\+\+Mechanic} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} $\ast$col, \hyperlink{class_config}{Config} conf)
+\item 
+void \hyperlink{class_shooting___mechanic_a563bb47b2bb1c5f141cf47579d1402a6}{draw} ()
+\item 
+void \hyperlink{class_shooting___mechanic_a24b0992f715aa5e07a8d81c229401de0}{hero\+Shot} (\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$helt, int kamera\+Pos)
+\item 
+void \hyperlink{class_shooting___mechanic_a2589f160241b7703aa04a3e2ffb11a9a}{enemyshot} (std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$ actor\+\_\+array, int kamera\+Pos)
+\item 
+void \hyperlink{class_shooting___mechanic_ae400341fd136cbd1ba39e5bcef2d6537}{erase\+Projectile} (int proj\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_collision}{Collision} $\ast$ \hyperlink{class_shooting___mechanic_a73bdc235eb4ec579ba4d715cdb295e4e}{kollisjon}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_config}{Config} \hyperlink{class_shooting___mechanic_a69eb7f584def4225d9d0047f54489035}{configer}
+\item 
+int \hyperlink{class_shooting___mechanic_ac278fe303596d7b0f20e28ff8b4a8ed4}{dir} = 1
+\item 
+bool \hyperlink{class_shooting___mechanic_a7c7d3ab2cad3c1cecf5e167021960128}{key\+Pressed} = false
+\item 
+std\+::vector$<$ \hyperlink{class_projectile}{Projectile} $\ast$ $>$ \hyperlink{class_shooting___mechanic_a9fb5ad128dfb480bbb8174b07be01d92}{bullet\+Vector}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_shooting___mechanic_a74fc67d9d6a2840ca3f2500b964cc3e4}{vindu}
+\item 
+\hyperlink{class_sound}{Sound} \hyperlink{class_shooting___mechanic_aae7e73612b2103509fb73b11f0a24b70}{sound}
+\item 
+\hyperlink{classanimatonsprites}{animatonsprites} \hyperlink{class_shooting___mechanic_af5bec55c10082be57809d48c1c83254c}{animasjon}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Shooting\+\_\+\+Mechanic.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_shooting___mechanic_a2c1defa547e5b53d057a5296d6776107}{}\label{class_shooting___mechanic_a2c1defa547e5b53d057a5296d6776107} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{Shooting\+\_\+\+Mechanic()}{Shooting\_Mechanic()}}
+{\footnotesize\ttfamily Shooting\+\_\+\+Mechanic\+::\+Shooting\+\_\+\+Mechanic (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision} $\ast$}]{col,  }\item[{\hyperlink{class_config}{Config}}]{conf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Shooting\+\_\+\+Mechanic.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_shooting___mechanic_a563bb47b2bb1c5f141cf47579d1402a6}{}\label{class_shooting___mechanic_a563bb47b2bb1c5f141cf47579d1402a6} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!draw@{draw}}
+\index{draw@{draw}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Mechanic\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 181 of file Shooting\+\_\+\+Mechanic.\+cpp.
+
+\hypertarget{class_shooting___mechanic_a2589f160241b7703aa04a3e2ffb11a9a}{}\label{class_shooting___mechanic_a2589f160241b7703aa04a3e2ffb11a9a} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!enemyshot@{enemyshot}}
+\index{enemyshot@{enemyshot}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{enemyshot()}{enemyshot()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Mechanic\+::enemyshot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$}]{actor\+\_\+array,  }\item[{int}]{kamera\+Pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file Shooting\+\_\+\+Mechanic.\+cpp.
+
+\hypertarget{class_shooting___mechanic_ae400341fd136cbd1ba39e5bcef2d6537}{}\label{class_shooting___mechanic_ae400341fd136cbd1ba39e5bcef2d6537} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!erase\+Projectile@{erase\+Projectile}}
+\index{erase\+Projectile@{erase\+Projectile}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{erase\+Projectile()}{eraseProjectile()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Mechanic\+::erase\+Projectile (\begin{DoxyParamCaption}\item[{int}]{proj\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 177 of file Shooting\+\_\+\+Mechanic.\+cpp.
+
+\hypertarget{class_shooting___mechanic_a24b0992f715aa5e07a8d81c229401de0}{}\label{class_shooting___mechanic_a24b0992f715aa5e07a8d81c229401de0} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!hero\+Shot@{hero\+Shot}}
+\index{hero\+Shot@{hero\+Shot}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{hero\+Shot()}{heroShot()}}
+{\footnotesize\ttfamily void Shooting\+\_\+\+Mechanic\+::hero\+Shot (\begin{DoxyParamCaption}\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{helt,  }\item[{int}]{kamera\+Pos }\end{DoxyParamCaption})}
+
+lagrer kule rettning 
+
+Definition at line 15 of file Shooting\+\_\+\+Mechanic.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_shooting___mechanic_af5bec55c10082be57809d48c1c83254c}{}\label{class_shooting___mechanic_af5bec55c10082be57809d48c1c83254c} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!animasjon@{animasjon}}
+\index{animasjon@{animasjon}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{animasjon}{animasjon}}
+{\footnotesize\ttfamily \hyperlink{classanimatonsprites}{animatonsprites} Shooting\+\_\+\+Mechanic\+::animasjon\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 27 of file Shooting\+\_\+\+Mechanic.\+h.
+
+\hypertarget{class_shooting___mechanic_a9fb5ad128dfb480bbb8174b07be01d92}{}\label{class_shooting___mechanic_a9fb5ad128dfb480bbb8174b07be01d92} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!bullet\+Vector@{bullet\+Vector}}
+\index{bullet\+Vector@{bullet\+Vector}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{bullet\+Vector}{bulletVector}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_projectile}{Projectile}$\ast$$>$ Shooting\+\_\+\+Mechanic\+::bullet\+Vector\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 24 of file Shooting\+\_\+\+Mechanic.\+h.
+
+\hypertarget{class_shooting___mechanic_a69eb7f584def4225d9d0047f54489035}{}\label{class_shooting___mechanic_a69eb7f584def4225d9d0047f54489035} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!configer@{configer}}
+\index{configer@{configer}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{configer}{configer}}
+{\footnotesize\ttfamily \hyperlink{class_config}{Config} Shooting\+\_\+\+Mechanic\+::configer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 21 of file Shooting\+\_\+\+Mechanic.\+h.
+
+\hypertarget{class_shooting___mechanic_ac278fe303596d7b0f20e28ff8b4a8ed4}{}\label{class_shooting___mechanic_ac278fe303596d7b0f20e28ff8b4a8ed4} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!dir@{dir}}
+\index{dir@{dir}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily int Shooting\+\_\+\+Mechanic\+::dir = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 22 of file Shooting\+\_\+\+Mechanic.\+h.
+
+\hypertarget{class_shooting___mechanic_a7c7d3ab2cad3c1cecf5e167021960128}{}\label{class_shooting___mechanic_a7c7d3ab2cad3c1cecf5e167021960128} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{key\+Pressed}{keyPressed}}
+{\footnotesize\ttfamily bool Shooting\+\_\+\+Mechanic\+::key\+Pressed = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 23 of file Shooting\+\_\+\+Mechanic.\+h.
+
+\hypertarget{class_shooting___mechanic_a73bdc235eb4ec579ba4d715cdb295e4e}{}\label{class_shooting___mechanic_a73bdc235eb4ec579ba4d715cdb295e4e} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!kollisjon@{kollisjon}}
+\index{kollisjon@{kollisjon}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{kollisjon}{kollisjon}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision}$\ast$ Shooting\+\_\+\+Mechanic\+::kollisjon}
+
+
+
+Definition at line 36 of file Shooting\+\_\+\+Mechanic.\+h.
+
+\hypertarget{class_shooting___mechanic_aae7e73612b2103509fb73b11f0a24b70}{}\label{class_shooting___mechanic_aae7e73612b2103509fb73b11f0a24b70} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!sound@{sound}}
+\index{sound@{sound}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily \hyperlink{class_sound}{Sound} Shooting\+\_\+\+Mechanic\+::sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 26 of file Shooting\+\_\+\+Mechanic.\+h.
+
+\hypertarget{class_shooting___mechanic_a74fc67d9d6a2840ca3f2500b964cc3e4}{}\label{class_shooting___mechanic_a74fc67d9d6a2840ca3f2500b964cc3e4} 
+\index{Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}!vindu@{vindu}}
+\index{vindu@{vindu}!Shooting\+\_\+\+Mechanic@{Shooting\+\_\+\+Mechanic}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Shooting\+\_\+\+Mechanic\+::vindu\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 25 of file Shooting\+\_\+\+Mechanic.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/projectil/\hyperlink{_shooting___mechanic_8h}{Shooting\+\_\+\+Mechanic.\+h}\item 
+Actor/projectil/\hyperlink{_shooting___mechanic_8cpp}{Shooting\+\_\+\+Mechanic.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,351 @@
+\hypertarget{class_game___state}{}\section{Game\+\_\+\+State Class Reference}
+\label{class_game___state}\index{Game\+\_\+\+State@{Game\+\_\+\+State}}
+
+
+{\ttfamily \#include $<$game\+\_\+state.\+h$>$}
+
+Inheritance diagram for Game\+\_\+\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game___state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game___state_a93409470dc62892876fe0dafafb910ad}{Game\+\_\+\+State} (sf\+::\+Render\+Window \&\hyperlink{class_game___state_a5a9bb4b732ee25b0f9de3baa2ee71045}{window}, int \hyperlink{class_super___state_ad6b74d4864a4e2cccf58316cd1af2e83}{level}, \hyperlink{class_config}{Config} \&\hyperlink{class_game___state_a6f82c6c66962953aee7de556d3877eeb}{conf}, sf\+::\+View \&camera)
+\item 
+void \hyperlink{class_game___state_aaaaa14909458922108ecc2495986db3d}{switch\+To} ()
+\item 
+bool \hyperlink{class_game___state_acf99f3862148f13c48e9644b7bd5e64b}{switch\+Level} (\hyperlink{class_tilemap}{Tilemap} $\ast$\hyperlink{class_game___state_af09e995b6bf08cbc23ef6dc4b32ad5cd}{map}, std\+::vector$<$ \hyperlink{class_level}{Level} $>$ level\+Loc\+Array, bool test, \hyperlink{class_config}{Config} $\ast$\hyperlink{class_game___state_a6f82c6c66962953aee7de556d3877eeb}{conf}, int \hyperlink{class_super___state_ad6b74d4864a4e2cccf58316cd1af2e83}{level})
+\item 
+void \hyperlink{class_game___state_a122037a320f91a566d07697ea4fa0f39}{Firewall\+Cam} (int firewallX)
+\item 
+sf\+::\+View \hyperlink{class_game___state_a87ce59fa6d8147096bfb835c5a93fc1d}{cam\+Mov} (sf\+::\+View camera, \hyperlink{class_hero}{Hero} helt)
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{class_game___state_a828b93b20d67bb6bdb1d15cd538157f5}{spawn} (\hyperlink{class_collision}{Collision} col)
+\item 
+void \hyperlink{class_game___state_a8dad75e154735be07e6d8d257bda049f}{actor\+Act} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Music \hyperlink{class_game___state_a3e529295cb321b91f68594e06ee5f8de}{B\+GM}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_game___state_a173b2606fcaf010b8f1eb8b6e5487a4e}{key\+Test}
+\item 
+bool \hyperlink{class_game___state_a6da4c593a72687a91c91027463fb9083}{firewall\+Test} = false
+\item 
+bool \hyperlink{class_game___state_a0e432196bf012dbfa928c947d829ae69}{firewall\+Level} = false
+\item 
+int \hyperlink{class_game___state_ab7f247337f6c29608333e2c8fe79b973}{last\+FirewallX}
+\item 
+int \hyperlink{class_game___state_a6aef3b71ebbfc46aabe99005ad609c96}{shake\+Var} = 0
+\item 
+int \hyperlink{class_game___state_a24adb6b7cfae8390f484501af0835b3f}{kameraX}
+\item 
+int \hyperlink{class_game___state_ad4fc3a4ab3d6caf08cfc8ae92505ebd6}{kameraY}
+\item 
+int \hyperlink{class_game___state_a800d81a46d0b4dead0b3516ab24ebc9c}{kamera\+Pos} = 0
+\item 
+int \hyperlink{class_game___state_abbd68113ae4a7ed42d4e600edd857ef1}{kamera\+Speed} = 5
+\item 
+int \hyperlink{class_game___state_aea29b5ae20f29dea3ba382e0f406319e}{spawning\+Actor} = 1
+\item 
+int \hyperlink{class_game___state_ab3f5efd3966eb17cff370700a750e1de}{spawning\+Enemy\+Type}
+\item 
+\hyperlink{class_tilemap}{Tilemap} \hyperlink{class_game___state_af09e995b6bf08cbc23ef6dc4b32ad5cd}{map}
+\item 
+\hyperlink{class_tilemap}{Tilemap} \hyperlink{class_game___state_a9de848045ff6eb1a2a2548a82fcd87b5}{map2}
+\item 
+\hyperlink{class_config}{Config} \& \hyperlink{class_game___state_a6f82c6c66962953aee7de556d3877eeb}{conf}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_game___state_a5a9bb4b732ee25b0f9de3baa2ee71045}{window}
+\item 
+std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$ $>$ \hyperlink{class_game___state_a5b5ad0c10282bbb7e407ccbba8a7c213}{actor\+\_\+array}
+\item 
+sf\+::\+View \hyperlink{class_game___state_a041c421a58505094d2dfc07f8a055e45}{camera2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file game\+\_\+state.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_game___state_a93409470dc62892876fe0dafafb910ad}{}\label{class_game___state_a93409470dc62892876fe0dafafb910ad} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+State()}{Game\_State()}}
+{\footnotesize\ttfamily Game\+\_\+\+State\+::\+Game\+\_\+\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{int}]{level,  }\item[{\hyperlink{class_config}{Config} \&}]{conf,  }\item[{sf\+::\+View \&}]{camera }\end{DoxyParamCaption})}
+
+constructs the game\+\_\+state 
+\begin{DoxyParams}{Parameters}
+{\em window} & window gamestate is drawn in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 29 of file game\+\_\+state.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game___state_a8dad75e154735be07e6d8d257bda049f}{}\label{class_game___state_a8dad75e154735be07e6d8d257bda049f} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!actor\+Act@{actor\+Act}}
+\index{actor\+Act@{actor\+Act}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{actor\+Act()}{actorAct()}}
+{\footnotesize\ttfamily void Game\+\_\+\+State\+::actor\+Act (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 232 of file game\+\_\+state.\+cpp.
+
+\hypertarget{class_game___state_a87ce59fa6d8147096bfb835c5a93fc1d}{}\label{class_game___state_a87ce59fa6d8147096bfb835c5a93fc1d} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!cam\+Mov@{cam\+Mov}}
+\index{cam\+Mov@{cam\+Mov}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{cam\+Mov()}{camMov()}}
+{\footnotesize\ttfamily sf\+::\+View Game\+\_\+\+State\+::cam\+Mov (\begin{DoxyParamCaption}\item[{sf\+::\+View}]{camera,  }\item[{\hyperlink{class_hero}{Hero}}]{helt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 362 of file game\+\_\+state.\+cpp.
+
+\hypertarget{class_game___state_a122037a320f91a566d07697ea4fa0f39}{}\label{class_game___state_a122037a320f91a566d07697ea4fa0f39} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!Firewall\+Cam@{Firewall\+Cam}}
+\index{Firewall\+Cam@{Firewall\+Cam}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{Firewall\+Cam()}{FirewallCam()}}
+{\footnotesize\ttfamily void Game\+\_\+\+State\+::\+Firewall\+Cam (\begin{DoxyParamCaption}\item[{int}]{firewallX }\end{DoxyParamCaption})}
+
+
+
+Definition at line 410 of file game\+\_\+state.\+cpp.
+
+\hypertarget{class_game___state_a828b93b20d67bb6bdb1d15cd538157f5}{}\label{class_game___state_a828b93b20d67bb6bdb1d15cd538157f5} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!spawn@{spawn}}
+\index{spawn@{spawn}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{spawn()}{spawn()}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} Game\+\_\+\+State\+::spawn (\begin{DoxyParamCaption}\item[{\hyperlink{class_collision}{Collision}}]{col }\end{DoxyParamCaption})}
+
+
+
+Definition at line 268 of file game\+\_\+state.\+cpp.
+
+\hypertarget{class_game___state_acf99f3862148f13c48e9644b7bd5e64b}{}\label{class_game___state_acf99f3862148f13c48e9644b7bd5e64b} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!switch\+Level@{switch\+Level}}
+\index{switch\+Level@{switch\+Level}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{switch\+Level()}{switchLevel()}}
+{\footnotesize\ttfamily bool Game\+\_\+\+State\+::switch\+Level (\begin{DoxyParamCaption}\item[{\hyperlink{class_tilemap}{Tilemap} $\ast$}]{map,  }\item[{std\+::vector$<$ \hyperlink{class_level}{Level} $>$}]{level\+Loc\+Array,  }\item[{bool}]{test,  }\item[{\hyperlink{class_config}{Config} $\ast$}]{conf,  }\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Definition at line 423 of file game\+\_\+state.\+cpp.
+
+\hypertarget{class_game___state_aaaaa14909458922108ecc2495986db3d}{}\label{class_game___state_aaaaa14909458922108ecc2495986db3d} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!switch\+To@{switch\+To}}
+\index{switch\+To@{switch\+To}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{switch\+To()}{switchTo()}}
+{\footnotesize\ttfamily void Game\+\_\+\+State\+::switch\+To (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 266 of file game\+\_\+state.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game___state_a5b5ad0c10282bbb7e407ccbba8a7c213}{}\label{class_game___state_a5b5ad0c10282bbb7e407ccbba8a7c213} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!actor\+\_\+array@{actor\+\_\+array}}
+\index{actor\+\_\+array@{actor\+\_\+array}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{actor\+\_\+array}{actor\_array}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_actor___class}{Actor\+\_\+\+Class}$\ast$$>$ Game\+\_\+\+State\+::actor\+\_\+array\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 46 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a3e529295cb321b91f68594e06ee5f8de}{}\label{class_game___state_a3e529295cb321b91f68594e06ee5f8de} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!B\+GM@{B\+GM}}
+\index{B\+GM@{B\+GM}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{B\+GM}{BGM}}
+{\footnotesize\ttfamily sf\+::\+Music Game\+\_\+\+State\+::\+B\+GM}
+
+
+
+Definition at line 23 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a041c421a58505094d2dfc07f8a055e45}{}\label{class_game___state_a041c421a58505094d2dfc07f8a055e45} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!camera2@{camera2}}
+\index{camera2@{camera2}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{camera2}{camera2}}
+{\footnotesize\ttfamily sf\+::\+View Game\+\_\+\+State\+::camera2\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 47 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a6f82c6c66962953aee7de556d3877eeb}{}\label{class_game___state_a6f82c6c66962953aee7de556d3877eeb} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!conf@{conf}}
+\index{conf@{conf}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{conf}{conf}}
+{\footnotesize\ttfamily \hyperlink{class_config}{Config}\& Game\+\_\+\+State\+::conf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 44 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a0e432196bf012dbfa928c947d829ae69}{}\label{class_game___state_a0e432196bf012dbfa928c947d829ae69} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!firewall\+Level@{firewall\+Level}}
+\index{firewall\+Level@{firewall\+Level}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{firewall\+Level}{firewallLevel}}
+{\footnotesize\ttfamily bool Game\+\_\+\+State\+::firewall\+Level = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 33 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a6da4c593a72687a91c91027463fb9083}{}\label{class_game___state_a6da4c593a72687a91c91027463fb9083} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!firewall\+Test@{firewall\+Test}}
+\index{firewall\+Test@{firewall\+Test}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{firewall\+Test}{firewallTest}}
+{\footnotesize\ttfamily bool Game\+\_\+\+State\+::firewall\+Test = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 32 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a800d81a46d0b4dead0b3516ab24ebc9c}{}\label{class_game___state_a800d81a46d0b4dead0b3516ab24ebc9c} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!kamera\+Pos@{kamera\+Pos}}
+\index{kamera\+Pos@{kamera\+Pos}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{kamera\+Pos}{kameraPos}}
+{\footnotesize\ttfamily int Game\+\_\+\+State\+::kamera\+Pos = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 38 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_abbd68113ae4a7ed42d4e600edd857ef1}{}\label{class_game___state_abbd68113ae4a7ed42d4e600edd857ef1} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!kamera\+Speed@{kamera\+Speed}}
+\index{kamera\+Speed@{kamera\+Speed}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{kamera\+Speed}{kameraSpeed}}
+{\footnotesize\ttfamily int Game\+\_\+\+State\+::kamera\+Speed = 5\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 39 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a24adb6b7cfae8390f484501af0835b3f}{}\label{class_game___state_a24adb6b7cfae8390f484501af0835b3f} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!kameraX@{kameraX}}
+\index{kameraX@{kameraX}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{kameraX}{kameraX}}
+{\footnotesize\ttfamily int Game\+\_\+\+State\+::kameraX\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 36 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_ad4fc3a4ab3d6caf08cfc8ae92505ebd6}{}\label{class_game___state_ad4fc3a4ab3d6caf08cfc8ae92505ebd6} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!kameraY@{kameraY}}
+\index{kameraY@{kameraY}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{kameraY}{kameraY}}
+{\footnotesize\ttfamily int Game\+\_\+\+State\+::kameraY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 37 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a173b2606fcaf010b8f1eb8b6e5487a4e}{}\label{class_game___state_a173b2606fcaf010b8f1eb8b6e5487a4e} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!key\+Test@{key\+Test}}
+\index{key\+Test@{key\+Test}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{key\+Test}{keyTest}}
+{\footnotesize\ttfamily bool Game\+\_\+\+State\+::key\+Test\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 31 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_ab7f247337f6c29608333e2c8fe79b973}{}\label{class_game___state_ab7f247337f6c29608333e2c8fe79b973} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!last\+FirewallX@{last\+FirewallX}}
+\index{last\+FirewallX@{last\+FirewallX}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{last\+FirewallX}{lastFirewallX}}
+{\footnotesize\ttfamily int Game\+\_\+\+State\+::last\+FirewallX\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 34 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_af09e995b6bf08cbc23ef6dc4b32ad5cd}{}\label{class_game___state_af09e995b6bf08cbc23ef6dc4b32ad5cd} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!map@{map}}
+\index{map@{map}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \hyperlink{class_tilemap}{Tilemap} Game\+\_\+\+State\+::map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 42 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a9de848045ff6eb1a2a2548a82fcd87b5}{}\label{class_game___state_a9de848045ff6eb1a2a2548a82fcd87b5} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!map2@{map2}}
+\index{map2@{map2}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{map2}{map2}}
+{\footnotesize\ttfamily \hyperlink{class_tilemap}{Tilemap} Game\+\_\+\+State\+::map2\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 43 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a6aef3b71ebbfc46aabe99005ad609c96}{}\label{class_game___state_a6aef3b71ebbfc46aabe99005ad609c96} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!shake\+Var@{shake\+Var}}
+\index{shake\+Var@{shake\+Var}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{shake\+Var}{shakeVar}}
+{\footnotesize\ttfamily int Game\+\_\+\+State\+::shake\+Var = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 35 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_aea29b5ae20f29dea3ba382e0f406319e}{}\label{class_game___state_aea29b5ae20f29dea3ba382e0f406319e} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!spawning\+Actor@{spawning\+Actor}}
+\index{spawning\+Actor@{spawning\+Actor}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{spawning\+Actor}{spawningActor}}
+{\footnotesize\ttfamily int Game\+\_\+\+State\+::spawning\+Actor = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 40 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_ab3f5efd3966eb17cff370700a750e1de}{}\label{class_game___state_ab3f5efd3966eb17cff370700a750e1de} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!spawning\+Enemy\+Type@{spawning\+Enemy\+Type}}
+\index{spawning\+Enemy\+Type@{spawning\+Enemy\+Type}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{spawning\+Enemy\+Type}{spawningEnemyType}}
+{\footnotesize\ttfamily int Game\+\_\+\+State\+::spawning\+Enemy\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 41 of file game\+\_\+state.\+h.
+
+\hypertarget{class_game___state_a5a9bb4b732ee25b0f9de3baa2ee71045}{}\label{class_game___state_a5a9bb4b732ee25b0f9de3baa2ee71045} 
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!window@{window}}
+\index{window@{window}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Game\+\_\+\+State\+::window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 45 of file game\+\_\+state.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+States/\hyperlink{game__state_8h}{game\+\_\+state.\+h}\item 
+States/\hyperlink{game__state_8cpp}{game\+\_\+state.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,275 @@
+\hypertarget{class_hero}{}\section{Hero Class Reference}
+\label{class_hero}\index{Hero@{Hero}}
+
+
+{\ttfamily \#include $<$Hero.\+h$>$}
+
+Inheritance diagram for Hero\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_hero}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hero_aa8d54981ec6db2a2e0311f1dd213691e}{Hero} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{class_hero_aea83769f887a67e6d88679a45952a61a}{col}, int x\+Inn, int y\+Inn)
+\item 
+void \hyperlink{class_hero_a1bee38d9164cf1ecda512cc24e81b171}{jump} ()
+\item 
+void \hyperlink{class_hero_a24e136aeddd49d1a7d0c068079fbab7e}{move} ()
+\begin{DoxyCompactList}\small\item\em makes the hero move \end{DoxyCompactList}\item 
+void \hyperlink{class_hero_abc9f2dece1e3757ba2b315a332f995c2}{draw} ()
+\begin{DoxyCompactList}\small\item\em draws the hero \end{DoxyCompactList}\item 
+void \hyperlink{class_hero_a62d93b951b0b769c75ddbdf1615660a0}{death} ()
+\begin{DoxyCompactList}\small\item\em kills the hero \end{DoxyCompactList}\item 
+void \hyperlink{class_hero_a585f9c068f73d937d6a6f90c9ccad41c}{respawn} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classanimatonsprites}{animatonsprites} \hyperlink{class_hero_a9c368b8a26455c128c1311063cdc03c1}{animation}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{class_hero_a818f9a85aebe1f50a2d3ababa31f8e0a}{helt}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_hero_af5ac5a52b7b852cafbe92d6ba4511e37}{vindu}
+\item 
+int \hyperlink{class_hero_ae881db3753a9ee23d80feed8d38b4dd6}{jump\+Var} = 0
+\begin{DoxyCompactList}\small\item\em makes the hero jump \end{DoxyCompactList}\item 
+int \hyperlink{class_hero_a546472f45445c2ad4db03ec6555d32fd}{startX} = 20
+\item 
+int \hyperlink{class_hero_a517e87f337a24614d52bab4dcf0287e9}{startY} = 100
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{class_hero_aea83769f887a67e6d88679a45952a61a}{col}
+\item 
+\hyperlink{class_sound}{Sound} \hyperlink{class_hero_ad280a3af2955ebcaff431dc94b5757ab}{sounds}
+\item 
+\hyperlink{class_config}{Config} \hyperlink{class_hero_adde89b9a9dcdfcb85d35ffa37b787714}{conf}
+\item 
+int \hyperlink{class_hero_afa058b7a5c0fca85db2608b849d6be97}{mutecheck} = 0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Hero.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hero_aa8d54981ec6db2a2e0311f1dd213691e}{}\label{class_hero_aa8d54981ec6db2a2e0311f1dd213691e} 
+\index{Hero@{Hero}!Hero@{Hero}}
+\index{Hero@{Hero}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{Hero()}{Hero()}}
+{\footnotesize\ttfamily Hero\+::\+Hero (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn }\end{DoxyParamCaption})}
+
+makes a hero characther that the player can control 
+\begin{DoxyParams}{Parameters}
+{\em window} & defines the window where the hero is drawn \\
+\hline
+{\em col} & is the collision detection function that the hero uses \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+ensures that the hero texture has been loaded 
+
+Definition at line 9 of file Hero.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hero_a62d93b951b0b769c75ddbdf1615660a0}{}\label{class_hero_a62d93b951b0b769c75ddbdf1615660a0} 
+\index{Hero@{Hero}!death@{death}}
+\index{death@{death}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void Hero\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+kills the hero 
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 125 of file Hero.\+cpp.
+
+\hypertarget{class_hero_abc9f2dece1e3757ba2b315a332f995c2}{}\label{class_hero_abc9f2dece1e3757ba2b315a332f995c2} 
+\index{Hero@{Hero}!draw@{draw}}
+\index{draw@{draw}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Hero\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draws the hero 
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 148 of file Hero.\+cpp.
+
+\hypertarget{class_hero_a1bee38d9164cf1ecda512cc24e81b171}{}\label{class_hero_a1bee38d9164cf1ecda512cc24e81b171} 
+\index{Hero@{Hero}!jump@{jump}}
+\index{jump@{jump}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Hero\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 101 of file Hero.\+cpp.
+
+\hypertarget{class_hero_a24e136aeddd49d1a7d0c068079fbab7e}{}\label{class_hero_a24e136aeddd49d1a7d0c068079fbab7e} 
+\index{Hero@{Hero}!move@{move}}
+\index{move@{move}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Hero\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+makes the hero move 
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 63 of file Hero.\+cpp.
+
+\hypertarget{class_hero_a585f9c068f73d937d6a6f90c9ccad41c}{}\label{class_hero_a585f9c068f73d937d6a6f90c9ccad41c} 
+\index{Hero@{Hero}!respawn@{respawn}}
+\index{respawn@{respawn}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{respawn()}{respawn()}}
+{\footnotesize\ttfamily void Hero\+::respawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 141 of file Hero.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_hero_a9c368b8a26455c128c1311063cdc03c1}{}\label{class_hero_a9c368b8a26455c128c1311063cdc03c1} 
+\index{Hero@{Hero}!animation@{animation}}
+\index{animation@{animation}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily \hyperlink{classanimatonsprites}{animatonsprites} Hero\+::animation}
+
+
+
+Definition at line 21 of file Hero.\+h.
+
+\hypertarget{class_hero_aea83769f887a67e6d88679a45952a61a}{}\label{class_hero_aea83769f887a67e6d88679a45952a61a} 
+\index{Hero@{Hero}!col@{col}}
+\index{col@{col}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} Hero\+::col}
+
+
+
+Definition at line 44 of file Hero.\+h.
+
+\hypertarget{class_hero_adde89b9a9dcdfcb85d35ffa37b787714}{}\label{class_hero_adde89b9a9dcdfcb85d35ffa37b787714} 
+\index{Hero@{Hero}!conf@{conf}}
+\index{conf@{conf}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{conf}{conf}}
+{\footnotesize\ttfamily \hyperlink{class_config}{Config} Hero\+::conf}
+
+
+
+Definition at line 46 of file Hero.\+h.
+
+\hypertarget{class_hero_a818f9a85aebe1f50a2d3ababa31f8e0a}{}\label{class_hero_a818f9a85aebe1f50a2d3ababa31f8e0a} 
+\index{Hero@{Hero}!helt@{helt}}
+\index{helt@{helt}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{helt}{helt}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Hero\+::helt}
+
+
+
+Definition at line 22 of file Hero.\+h.
+
+\hypertarget{class_hero_ae881db3753a9ee23d80feed8d38b4dd6}{}\label{class_hero_ae881db3753a9ee23d80feed8d38b4dd6} 
+\index{Hero@{Hero}!jump\+Var@{jump\+Var}}
+\index{jump\+Var@{jump\+Var}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{jump\+Var}{jumpVar}}
+{\footnotesize\ttfamily int Hero\+::jump\+Var = 0}
+
+
+
+makes the hero jump 
+
+
+
+Definition at line 40 of file Hero.\+h.
+
+\hypertarget{class_hero_afa058b7a5c0fca85db2608b849d6be97}{}\label{class_hero_afa058b7a5c0fca85db2608b849d6be97} 
+\index{Hero@{Hero}!mutecheck@{mutecheck}}
+\index{mutecheck@{mutecheck}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{mutecheck}{mutecheck}}
+{\footnotesize\ttfamily int Hero\+::mutecheck = 0}
+
+
+
+Definition at line 48 of file Hero.\+h.
+
+\hypertarget{class_hero_ad280a3af2955ebcaff431dc94b5757ab}{}\label{class_hero_ad280a3af2955ebcaff431dc94b5757ab} 
+\index{Hero@{Hero}!sounds@{sounds}}
+\index{sounds@{sounds}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{sounds}{sounds}}
+{\footnotesize\ttfamily \hyperlink{class_sound}{Sound} Hero\+::sounds}
+
+
+
+Definition at line 45 of file Hero.\+h.
+
+\hypertarget{class_hero_a546472f45445c2ad4db03ec6555d32fd}{}\label{class_hero_a546472f45445c2ad4db03ec6555d32fd} 
+\index{Hero@{Hero}!startX@{startX}}
+\index{startX@{startX}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily int Hero\+::startX = 20}
+
+
+
+Definition at line 41 of file Hero.\+h.
+
+\hypertarget{class_hero_a517e87f337a24614d52bab4dcf0287e9}{}\label{class_hero_a517e87f337a24614d52bab4dcf0287e9} 
+\index{Hero@{Hero}!startY@{startY}}
+\index{startY@{startY}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{startY}{startY}}
+{\footnotesize\ttfamily int Hero\+::startY = 100}
+
+
+
+Definition at line 42 of file Hero.\+h.
+
+\hypertarget{class_hero_af5ac5a52b7b852cafbe92d6ba4511e37}{}\label{class_hero_af5ac5a52b7b852cafbe92d6ba4511e37} 
+\index{Hero@{Hero}!vindu@{vindu}}
+\index{vindu@{vindu}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Hero\+::vindu}
+
+
+
+Definition at line 28 of file Hero.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/\hyperlink{_hero_8h}{Hero.\+h}\item 
+Actor/\hyperlink{_hero_8cpp}{Hero.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="HM_Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Jonas/hacman/HM_Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Jonas/hacman/HM_Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HM_Project">
+				<Option output="C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/HM_Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jonas/hacman/HM_Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 HM_Project"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HM_Project/fast">
+				<Option output="C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/HM_Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Jonas/hacman/HM_Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 HM_Project/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Jonas/hacman/HM_Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Jonas/hacman/HM_Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/Hero.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/Hero.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/Textbox.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/Textbox.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/actor_class.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/actor_class.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/animatonsprites.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/animatonsprites.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/Boss_door.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/Boss_door.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/Firewall.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/Firewall.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/Flying_enemy.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/Flying_enemy.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/boss_enemy_2.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/boss_enemy_2.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/boss_fight_1.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/boss_fight_1.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/boss_fight_3.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/boss_fight_3.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/enemy_goomba.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/enemy_goomba.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/health_item.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/health_item.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_E.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_E.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_N.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_N.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_S.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_S.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_W.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_W.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_all.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/enemy/turret_all.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/projectil/Shooting_Mechanic.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/projectil/Shooting_Mechanic.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/projectil/projectile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Actor/projectil/projectile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Fysik/collision.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Fysik/collision.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Fysik/interacting.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Fysik/interacting.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Level.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Level.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Sound.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Sound.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/Pause_State.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/Pause_State.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/Super_State.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/Super_State.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/Window_State.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/Window_State.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/game_state.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/game_state.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/levelswich.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/levelswich.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/menu_state.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/menu_state.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/selectlvl_state.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/selectlvl_state.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/settings_state.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/settings_state.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/state_switcher.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/States/state_switcher.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Super_Class.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Super_Class.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Finnish_tile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Finnish_tile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Semisolid_Tile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Semisolid_Tile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Solid_Tile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Solid_Tile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Super_Tile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Super_Tile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Tilemap.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/Tilemap.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/action_tile/Action_Tile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/action_tile/Action_Tile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/action_tile/Spawn_Tile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/action_tile/Spawn_Tile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/action_tile/Speed_Tile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/action_tile/Speed_Tile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/action_tile/Spike_Tile.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/Tile/action_tile/Spike_Tile.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/config.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/game_timer.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/game_timer.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/health_bar.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/health_bar.h">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/main.cpp">
+			<Option target="HM_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Jonas/hacman/HM_Project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

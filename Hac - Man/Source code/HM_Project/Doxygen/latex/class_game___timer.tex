@@ -1,0 +1,163 @@
+\hypertarget{class_game___timer}{}\section{Game\+\_\+\+Timer Class Reference}
+\label{class_game___timer}\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+
+
+{\ttfamily \#include $<$game\+\_\+timer.\+h$>$}
+
+Inheritance diagram for Game\+\_\+\+Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game___timer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game___timer_a88916106390a164bc9bc6ba3ba15f016}{Game\+\_\+\+Timer} (sf\+::\+Render\+Window \&window)
+\item 
+void \hyperlink{class_game___timer_ab31ec234c05a3556d7f13cb2321b4bc4}{teller} ()
+\item 
+void \hyperlink{class_game___timer_aec7c78ad66d424bce367c3016fb98232}{draw} (int kamera\+Pos, int kamera\+PosY)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Text \hyperlink{class_game___timer_a220c82c41741426a03ce27b0d5bf4cdd}{Game\+\_\+time}
+\item 
+sf\+::\+Font \hyperlink{class_game___timer_a4d3db3baba86f24e5b69fc462d48868c}{font}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Clock \hyperlink{class_game___timer_a0d0bd639a7113080aa7c6ba6d712ec38}{clock}
+\item 
+int \hyperlink{class_game___timer_a3d5fd5c7113df6f8a4a71130b74716c1}{timer}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_game___timer_a09409d0e504612058311ec08a7f890f3}{vindu}
+\item 
+std\+::string \hyperlink{class_game___timer_ac18cf859f9839cf7b21b733125c3bdb6}{temp}
+\item 
+bool \hyperlink{class_game___timer_a8b0bfed6b2c70a9ab14398b6afcc1f16}{paused} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file game\+\_\+timer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_game___timer_a88916106390a164bc9bc6ba3ba15f016}{}\label{class_game___timer_a88916106390a164bc9bc6ba3ba15f016} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Timer()}{Game\_Timer()}}
+{\footnotesize\ttfamily Game\+\_\+\+Timer\+::\+Game\+\_\+\+Timer (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file game\+\_\+timer.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game___timer_aec7c78ad66d424bce367c3016fb98232}{}\label{class_game___timer_aec7c78ad66d424bce367c3016fb98232} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!draw@{draw}}
+\index{draw@{draw}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Timer\+::draw (\begin{DoxyParamCaption}\item[{int}]{kamera\+Pos,  }\item[{int}]{kamera\+PosY }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file game\+\_\+timer.\+cpp.
+
+\hypertarget{class_game___timer_ab31ec234c05a3556d7f13cb2321b4bc4}{}\label{class_game___timer_ab31ec234c05a3556d7f13cb2321b4bc4} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!teller@{teller}}
+\index{teller@{teller}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{teller()}{teller()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Timer\+::teller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file game\+\_\+timer.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game___timer_a0d0bd639a7113080aa7c6ba6d712ec38}{}\label{class_game___timer_a0d0bd639a7113080aa7c6ba6d712ec38} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!clock@{clock}}
+\index{clock@{clock}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily sf\+::\+Clock Game\+\_\+\+Timer\+::clock\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 15 of file game\+\_\+timer.\+h.
+
+\hypertarget{class_game___timer_a4d3db3baba86f24e5b69fc462d48868c}{}\label{class_game___timer_a4d3db3baba86f24e5b69fc462d48868c} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!font@{font}}
+\index{font@{font}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font Game\+\_\+\+Timer\+::font}
+
+
+
+Definition at line 26 of file game\+\_\+timer.\+h.
+
+\hypertarget{class_game___timer_a220c82c41741426a03ce27b0d5bf4cdd}{}\label{class_game___timer_a220c82c41741426a03ce27b0d5bf4cdd} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!Game\+\_\+time@{Game\+\_\+time}}
+\index{Game\+\_\+time@{Game\+\_\+time}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{Game\+\_\+time}{Game\_time}}
+{\footnotesize\ttfamily sf\+::\+Text Game\+\_\+\+Timer\+::\+Game\+\_\+time}
+
+
+
+Definition at line 25 of file game\+\_\+timer.\+h.
+
+\hypertarget{class_game___timer_a8b0bfed6b2c70a9ab14398b6afcc1f16}{}\label{class_game___timer_a8b0bfed6b2c70a9ab14398b6afcc1f16} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!paused@{paused}}
+\index{paused@{paused}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily bool Game\+\_\+\+Timer\+::paused = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 19 of file game\+\_\+timer.\+h.
+
+\hypertarget{class_game___timer_ac18cf859f9839cf7b21b733125c3bdb6}{}\label{class_game___timer_ac18cf859f9839cf7b21b733125c3bdb6} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!temp@{temp}}
+\index{temp@{temp}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily std\+::string Game\+\_\+\+Timer\+::temp\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 18 of file game\+\_\+timer.\+h.
+
+\hypertarget{class_game___timer_a3d5fd5c7113df6f8a4a71130b74716c1}{}\label{class_game___timer_a3d5fd5c7113df6f8a4a71130b74716c1} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!timer@{timer}}
+\index{timer@{timer}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily int Game\+\_\+\+Timer\+::timer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 16 of file game\+\_\+timer.\+h.
+
+\hypertarget{class_game___timer_a09409d0e504612058311ec08a7f890f3}{}\label{class_game___timer_a09409d0e504612058311ec08a7f890f3} 
+\index{Game\+\_\+\+Timer@{Game\+\_\+\+Timer}!vindu@{vindu}}
+\index{vindu@{vindu}!Game\+\_\+\+Timer@{Game\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Game\+\_\+\+Timer\+::vindu\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17 of file game\+\_\+timer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{game__timer_8h}{game\+\_\+timer.\+h}\item 
+\hyperlink{game__timer_8cpp}{game\+\_\+timer.\+cpp}\end{DoxyCompactItemize}

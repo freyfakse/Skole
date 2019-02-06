@@ -1,0 +1,197 @@
+\hypertarget{class_firewall}{}\section{Firewall Class Reference}
+\label{class_firewall}\index{Firewall@{Firewall}}
+
+
+{\ttfamily \#include $<$Firewall.\+h$>$}
+
+Inheritance diagram for Firewall\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_firewall}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_firewall_a77f12236ebbdcc218d03366774aa9aab}{Firewall} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{class_firewall_af1c215a26c43f1339ca1247f02f0d91e}{col}, int x\+Inn, int y\+Inn, int length)
+\item 
+void \hyperlink{class_firewall_ac08bd22ea41caaa8ab269a9b1e0d36aa}{move} ()
+\item 
+void \hyperlink{class_firewall_a6fd8ce6bf5731d822c0d47ee209dbe8d}{jump} ()
+\item 
+void \hyperlink{class_firewall_a3e67e39efb0a425acd1f009f86e434ee}{draw} ()
+\item 
+void \hyperlink{class_firewall_a506013f97478b8937becdac038c45c8e}{death} ()
+\item 
+void \hyperlink{class_firewall_a035dac1c484fe153ca14710777c617cb}{interaction\+\_\+effect} (\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$actor)
+\item 
+void \hyperlink{class_firewall_a21c3c46eaf7bb026b73a77b0288fa232}{interaction} (std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$ actor\+\_\+array)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{class_firewall_aeb0bd3471e4a080461e2c4d9c8e64a4b}{firewall}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_firewall_a65ebc11322740e80e12fec7f0789142d}{vindu}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{class_firewall_af1c215a26c43f1339ca1247f02f0d91e}{col}
+\item 
+int \hyperlink{class_firewall_ad99a69d3d864a94b406d0dd7711abb73}{mylength}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file Firewall.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_firewall_a77f12236ebbdcc218d03366774aa9aab}{}\label{class_firewall_a77f12236ebbdcc218d03366774aa9aab} 
+\index{Firewall@{Firewall}!Firewall@{Firewall}}
+\index{Firewall@{Firewall}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{Firewall()}{Firewall()}}
+{\footnotesize\ttfamily Firewall\+::\+Firewall (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+ensures that the hero texture has been loaded 
+
+Definition at line 10 of file Firewall.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_firewall_a506013f97478b8937becdac038c45c8e}{}\label{class_firewall_a506013f97478b8937becdac038c45c8e} 
+\index{Firewall@{Firewall}!death@{death}}
+\index{death@{death}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void Firewall\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 76 of file Firewall.\+cpp.
+
+\hypertarget{class_firewall_a3e67e39efb0a425acd1f009f86e434ee}{}\label{class_firewall_a3e67e39efb0a425acd1f009f86e434ee} 
+\index{Firewall@{Firewall}!draw@{draw}}
+\index{draw@{draw}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Firewall\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 68 of file Firewall.\+cpp.
+
+\hypertarget{class_firewall_a21c3c46eaf7bb026b73a77b0288fa232}{}\label{class_firewall_a21c3c46eaf7bb026b73a77b0288fa232} 
+\index{Firewall@{Firewall}!interaction@{interaction}}
+\index{interaction@{interaction}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{interaction()}{interaction()}}
+{\footnotesize\ttfamily void Firewall\+::interaction (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$}]{actor\+\_\+array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a87d1e079d8576fa99592a60b38a04a1b}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 60 of file Firewall.\+cpp.
+
+\hypertarget{class_firewall_a035dac1c484fe153ca14710777c617cb}{}\label{class_firewall_a035dac1c484fe153ca14710777c617cb} 
+\index{Firewall@{Firewall}!interaction\+\_\+effect@{interaction\+\_\+effect}}
+\index{interaction\+\_\+effect@{interaction\+\_\+effect}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{interaction\+\_\+effect()}{interaction\_effect()}}
+{\footnotesize\ttfamily void Firewall\+::interaction\+\_\+effect (\begin{DoxyParamCaption}\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af3488ca470eb77255060142fd167aa72}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 81 of file Firewall.\+cpp.
+
+\hypertarget{class_firewall_a6fd8ce6bf5731d822c0d47ee209dbe8d}{}\label{class_firewall_a6fd8ce6bf5731d822c0d47ee209dbe8d} 
+\index{Firewall@{Firewall}!jump@{jump}}
+\index{jump@{jump}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Firewall\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 73 of file Firewall.\+cpp.
+
+\hypertarget{class_firewall_ac08bd22ea41caaa8ab269a9b1e0d36aa}{}\label{class_firewall_ac08bd22ea41caaa8ab269a9b1e0d36aa} 
+\index{Firewall@{Firewall}!move@{move}}
+\index{move@{move}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Firewall\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 49 of file Firewall.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_firewall_af1c215a26c43f1339ca1247f02f0d91e}{}\label{class_firewall_af1c215a26c43f1339ca1247f02f0d91e} 
+\index{Firewall@{Firewall}!col@{col}}
+\index{col@{col}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} Firewall\+::col}
+
+
+
+Definition at line 18 of file Firewall.\+h.
+
+\hypertarget{class_firewall_aeb0bd3471e4a080461e2c4d9c8e64a4b}{}\label{class_firewall_aeb0bd3471e4a080461e2c4d9c8e64a4b} 
+\index{Firewall@{Firewall}!firewall@{firewall}}
+\index{firewall@{firewall}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{firewall}{firewall}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Firewall\+::firewall}
+
+
+
+Definition at line 15 of file Firewall.\+h.
+
+\hypertarget{class_firewall_ad99a69d3d864a94b406d0dd7711abb73}{}\label{class_firewall_ad99a69d3d864a94b406d0dd7711abb73} 
+\index{Firewall@{Firewall}!mylength@{mylength}}
+\index{mylength@{mylength}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{mylength}{mylength}}
+{\footnotesize\ttfamily int Firewall\+::mylength}
+
+
+
+Definition at line 19 of file Firewall.\+h.
+
+\hypertarget{class_firewall_a65ebc11322740e80e12fec7f0789142d}{}\label{class_firewall_a65ebc11322740e80e12fec7f0789142d} 
+\index{Firewall@{Firewall}!vindu@{vindu}}
+\index{vindu@{vindu}!Firewall@{Firewall}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Firewall\+::vindu}
+
+
+
+Definition at line 17 of file Firewall.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/enemy/\hyperlink{_firewall_8h}{Firewall.\+h}\item 
+Actor/enemy/\hyperlink{_firewall_8cpp}{Firewall.\+cpp}\end{DoxyCompactItemize}

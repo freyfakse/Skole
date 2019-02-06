@@ -1,0 +1,245 @@
+\hypertarget{classboss__fight__1}{}\section{boss\+\_\+fight\+\_\+1 Class Reference}
+\label{classboss__fight__1}\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+
+
+{\ttfamily \#include $<$boss\+\_\+fight\+\_\+1.\+h$>$}
+
+Inheritance diagram for boss\+\_\+fight\+\_\+1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classboss__fight__1}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classboss__fight__1_a189fa85c3b23bb89776bebaa9f8dce70}{boss\+\_\+fight\+\_\+1} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{classboss__fight__1_a7419d00c4958618eaffb181617305d22}{col}, int x\+Inn, int y\+Inn)
+\item 
+void \hyperlink{classboss__fight__1_a363121fd16c5d41889f96405544bccc1}{jump} ()
+\item 
+void \hyperlink{classboss__fight__1_a2ecde11495757971f23f45e78f23c5f7}{move} ()
+\item 
+void \hyperlink{classboss__fight__1_a83b20e761e3f8781c8fee8d2be5442b0}{draw} ()
+\item 
+void \hyperlink{classboss__fight__1_a73c37c9ddf1b6370d1a9e2b5c9cd9b05}{action} ()
+\item 
+void \hyperlink{classboss__fight__1_a158e53600a084e13047732d89a0f4299}{death} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Music \hyperlink{classboss__fight__1_a7256c118906cf857f86beeb667291a91}{sound}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{classboss__fight__1_a1bbb6010e2d4fce0052b99b66968e694}{boss}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{classboss__fight__1_a87a27b1265ff58f25c6074405c93487e}{vindu}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{classboss__fight__1_a7419d00c4958618eaffb181617305d22}{col}
+\item 
+float \hyperlink{classboss__fight__1_a4f0ada94e6586c2e825abaf789d9269d}{gravity} = 5
+\item 
+int \hyperlink{classboss__fight__1_af45fe739248b1b3da432ec4ab0770913}{startX} =400
+\begin{DoxyCompactList}\small\item\em float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title \end{DoxyCompactList}\item 
+int \hyperlink{classboss__fight__1_a71884d8bccccd003e7b53acc6b86d513}{startY} =20
+\item 
+int \hyperlink{classboss__fight__1_ab020b6b32106cae5a2bdddef0443e5eb}{boss\+\_\+jump} = 50
+\item 
+int \hyperlink{classboss__fight__1_acdad682eac9821b3c2eb876eb1d99b90}{boss\+\_\+shoot} = 5
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file boss\+\_\+fight\+\_\+1.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classboss__fight__1_a189fa85c3b23bb89776bebaa9f8dce70}{}\label{classboss__fight__1_a189fa85c3b23bb89776bebaa9f8dce70} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{boss\+\_\+fight\+\_\+1()}{boss\_fight\_1()}}
+{\footnotesize\ttfamily boss\+\_\+fight\+\_\+1\+::boss\+\_\+fight\+\_\+1 (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn }\end{DoxyParamCaption})}
+
+ensures that the hero texture has been loaded 
+
+Definition at line 8 of file boss\+\_\+fight\+\_\+1.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classboss__fight__1_a73c37c9ddf1b6370d1a9e2b5c9cd9b05}{}\label{classboss__fight__1_a73c37c9ddf1b6370d1a9e2b5c9cd9b05} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!action@{action}}
+\index{action@{action}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily void boss\+\_\+fight\+\_\+1\+::action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab8e23ffae108da3b8eda67c6753bdae0}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 101 of file boss\+\_\+fight\+\_\+1.\+cpp.
+
+\hypertarget{classboss__fight__1_a158e53600a084e13047732d89a0f4299}{}\label{classboss__fight__1_a158e53600a084e13047732d89a0f4299} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!death@{death}}
+\index{death@{death}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void boss\+\_\+fight\+\_\+1\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 113 of file boss\+\_\+fight\+\_\+1.\+cpp.
+
+\hypertarget{classboss__fight__1_a83b20e761e3f8781c8fee8d2be5442b0}{}\label{classboss__fight__1_a83b20e761e3f8781c8fee8d2be5442b0} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!draw@{draw}}
+\index{draw@{draw}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void boss\+\_\+fight\+\_\+1\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 128 of file boss\+\_\+fight\+\_\+1.\+cpp.
+
+\hypertarget{classboss__fight__1_a363121fd16c5d41889f96405544bccc1}{}\label{classboss__fight__1_a363121fd16c5d41889f96405544bccc1} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!jump@{jump}}
+\index{jump@{jump}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void boss\+\_\+fight\+\_\+1\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 83 of file boss\+\_\+fight\+\_\+1.\+cpp.
+
+\hypertarget{classboss__fight__1_a2ecde11495757971f23f45e78f23c5f7}{}\label{classboss__fight__1_a2ecde11495757971f23f45e78f23c5f7} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!move@{move}}
+\index{move@{move}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void boss\+\_\+fight\+\_\+1\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 49 of file boss\+\_\+fight\+\_\+1.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classboss__fight__1_a1bbb6010e2d4fce0052b99b66968e694}{}\label{classboss__fight__1_a1bbb6010e2d4fce0052b99b66968e694} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!boss@{boss}}
+\index{boss@{boss}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{boss}{boss}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape boss\+\_\+fight\+\_\+1\+::boss}
+
+
+
+Definition at line 21 of file boss\+\_\+fight\+\_\+1.\+h.
+
+\hypertarget{classboss__fight__1_ab020b6b32106cae5a2bdddef0443e5eb}{}\label{classboss__fight__1_ab020b6b32106cae5a2bdddef0443e5eb} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!boss\+\_\+jump@{boss\+\_\+jump}}
+\index{boss\+\_\+jump@{boss\+\_\+jump}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{boss\+\_\+jump}{boss\_jump}}
+{\footnotesize\ttfamily int boss\+\_\+fight\+\_\+1\+::boss\+\_\+jump = 50}
+
+
+
+Definition at line 34 of file boss\+\_\+fight\+\_\+1.\+h.
+
+\hypertarget{classboss__fight__1_acdad682eac9821b3c2eb876eb1d99b90}{}\label{classboss__fight__1_acdad682eac9821b3c2eb876eb1d99b90} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!boss\+\_\+shoot@{boss\+\_\+shoot}}
+\index{boss\+\_\+shoot@{boss\+\_\+shoot}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{boss\+\_\+shoot}{boss\_shoot}}
+{\footnotesize\ttfamily int boss\+\_\+fight\+\_\+1\+::boss\+\_\+shoot = 5}
+
+
+
+Definition at line 35 of file boss\+\_\+fight\+\_\+1.\+h.
+
+\hypertarget{classboss__fight__1_a7419d00c4958618eaffb181617305d22}{}\label{classboss__fight__1_a7419d00c4958618eaffb181617305d22} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!col@{col}}
+\index{col@{col}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} boss\+\_\+fight\+\_\+1\+::col}
+
+
+
+Definition at line 24 of file boss\+\_\+fight\+\_\+1.\+h.
+
+\hypertarget{classboss__fight__1_a4f0ada94e6586c2e825abaf789d9269d}{}\label{classboss__fight__1_a4f0ada94e6586c2e825abaf789d9269d} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!gravity@{gravity}}
+\index{gravity@{gravity}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{gravity}{gravity}}
+{\footnotesize\ttfamily float boss\+\_\+fight\+\_\+1\+::gravity = 5}
+
+
+
+Definition at line 26 of file boss\+\_\+fight\+\_\+1.\+h.
+
+\hypertarget{classboss__fight__1_a7256c118906cf857f86beeb667291a91}{}\label{classboss__fight__1_a7256c118906cf857f86beeb667291a91} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!sound@{sound}}
+\index{sound@{sound}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily sf\+::\+Music boss\+\_\+fight\+\_\+1\+::sound}
+
+
+
+Definition at line 20 of file boss\+\_\+fight\+\_\+1.\+h.
+
+\hypertarget{classboss__fight__1_af45fe739248b1b3da432ec4ab0770913}{}\label{classboss__fight__1_af45fe739248b1b3da432ec4ab0770913} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!startX@{startX}}
+\index{startX@{startX}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily int boss\+\_\+fight\+\_\+1\+::startX =400}
+
+
+
+float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title 
+
+
+
+Definition at line 32 of file boss\+\_\+fight\+\_\+1.\+h.
+
+\hypertarget{classboss__fight__1_a71884d8bccccd003e7b53acc6b86d513}{}\label{classboss__fight__1_a71884d8bccccd003e7b53acc6b86d513} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!startY@{startY}}
+\index{startY@{startY}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{startY}{startY}}
+{\footnotesize\ttfamily int boss\+\_\+fight\+\_\+1\+::startY =20}
+
+
+
+Definition at line 33 of file boss\+\_\+fight\+\_\+1.\+h.
+
+\hypertarget{classboss__fight__1_a87a27b1265ff58f25c6074405c93487e}{}\label{classboss__fight__1_a87a27b1265ff58f25c6074405c93487e} 
+\index{boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}!vindu@{vindu}}
+\index{vindu@{vindu}!boss\+\_\+fight\+\_\+1@{boss\+\_\+fight\+\_\+1}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& boss\+\_\+fight\+\_\+1\+::vindu}
+
+
+
+Definition at line 23 of file boss\+\_\+fight\+\_\+1.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/enemy/\hyperlink{boss__fight__1_8h}{boss\+\_\+fight\+\_\+1.\+h}\item 
+Actor/enemy/\hyperlink{boss__fight__1_8cpp}{boss\+\_\+fight\+\_\+1.\+cpp}\end{DoxyCompactItemize}

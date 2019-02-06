@@ -1,0 +1,293 @@
+\hypertarget{class_textbox}{}\section{Textbox Class Reference}
+\label{class_textbox}\index{Textbox@{Textbox}}
+
+
+{\ttfamily \#include $<$Textbox.\+h$>$}
+
+Inheritance diagram for Textbox\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_textbox}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_textbox_ada0c266e63758f57f6f9c88daed041bd}{Textbox} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{class_textbox_ad89bdee3ead7d89dca3e1ba1468c272c}{col}, int x\+Inn, int y\+Inn)
+\item 
+void \hyperlink{class_textbox_a0a58c0b828fb627bd21c8156d279e082}{load\+Text} (int select)
+\item 
+void \hyperlink{class_textbox_a995336eb1a269216afb4dcd187e39d0b}{jump} ()
+\item 
+void \hyperlink{class_textbox_a4680a3e6bbaa33dc57a585c7e0072b0a}{move} ()
+\item 
+void \hyperlink{class_textbox_a164e6dfbd1964b36b05de0cf84d07abf}{draw} ()
+\item 
+void \hyperlink{class_textbox_a830cca6316662b4c7a1ae1d2f844f9ae}{death} ()
+\item 
+void \hyperlink{class_textbox_a67dd5640da6bbd88affded4a37ede098}{interaction} (std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$ actor\+\_\+array)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Text \hyperlink{class_textbox_a4f79784c45871da706e57c8435c8dff3}{text}
+\item 
+sf\+::\+Text \hyperlink{class_textbox_a5c229bd6795f3ab970ee0bf10252613d}{text1}
+\item 
+sf\+::\+Text \hyperlink{class_textbox_adafebfa39688753f259c72a7fcdcc3ad}{text2}
+\item 
+sf\+::\+Text \hyperlink{class_textbox_abccc498be23e0a6d7271a4692ae50289}{text3}
+\item 
+sf\+::\+Text \hyperlink{class_textbox_a37cfcc698bdbb5014fdc6ecf56c083c8}{text4}
+\item 
+sf\+::\+Text \hyperlink{class_textbox_a4f9b578979f37d545571532e41148a45}{text5}
+\item 
+sf\+::\+Font \hyperlink{class_textbox_a45eac53d4f51e36a8c0acfdc9df2f0cb}{font}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{class_textbox_a6da196e36384e83b7dc9fa9f81848536}{textbox}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_textbox_a43cc0d802e43397e373997b8595073ad}{vindu}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{class_textbox_ad89bdee3ead7d89dca3e1ba1468c272c}{col}
+\item 
+int \hyperlink{class_textbox_a8b9942b46c9fab7ed505918750174006}{startX} =400
+\begin{DoxyCompactList}\small\item\em float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title \end{DoxyCompactList}\item 
+int \hyperlink{class_textbox_a7cc50c3fa4ef2866a7d2acc7f2d5565b}{startY} =20
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Textbox.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_textbox_ada0c266e63758f57f6f9c88daed041bd}{}\label{class_textbox_ada0c266e63758f57f6f9c88daed041bd} 
+\index{Textbox@{Textbox}!Textbox@{Textbox}}
+\index{Textbox@{Textbox}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{Textbox()}{Textbox()}}
+{\footnotesize\ttfamily Textbox\+::\+Textbox (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Textbox.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_textbox_a830cca6316662b4c7a1ae1d2f844f9ae}{}\label{class_textbox_a830cca6316662b4c7a1ae1d2f844f9ae} 
+\index{Textbox@{Textbox}!death@{death}}
+\index{death@{death}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void Textbox\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 154 of file Textbox.\+cpp.
+
+\hypertarget{class_textbox_a164e6dfbd1964b36b05de0cf84d07abf}{}\label{class_textbox_a164e6dfbd1964b36b05de0cf84d07abf} 
+\index{Textbox@{Textbox}!draw@{draw}}
+\index{draw@{draw}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Textbox\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 110 of file Textbox.\+cpp.
+
+\hypertarget{class_textbox_a67dd5640da6bbd88affded4a37ede098}{}\label{class_textbox_a67dd5640da6bbd88affded4a37ede098} 
+\index{Textbox@{Textbox}!interaction@{interaction}}
+\index{interaction@{interaction}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{interaction()}{interaction()}}
+{\footnotesize\ttfamily void Textbox\+::interaction (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$}]{actor\+\_\+array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a87d1e079d8576fa99592a60b38a04a1b}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 122 of file Textbox.\+cpp.
+
+\hypertarget{class_textbox_a995336eb1a269216afb4dcd187e39d0b}{}\label{class_textbox_a995336eb1a269216afb4dcd187e39d0b} 
+\index{Textbox@{Textbox}!jump@{jump}}
+\index{jump@{jump}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Textbox\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 151 of file Textbox.\+cpp.
+
+\hypertarget{class_textbox_a0a58c0b828fb627bd21c8156d279e082}{}\label{class_textbox_a0a58c0b828fb627bd21c8156d279e082} 
+\index{Textbox@{Textbox}!load\+Text@{load\+Text}}
+\index{load\+Text@{load\+Text}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{load\+Text()}{loadText()}}
+{\footnotesize\ttfamily void Textbox\+::load\+Text (\begin{DoxyParamCaption}\item[{int}]{select }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file Textbox.\+cpp.
+
+\hypertarget{class_textbox_a4680a3e6bbaa33dc57a585c7e0072b0a}{}\label{class_textbox_a4680a3e6bbaa33dc57a585c7e0072b0a} 
+\index{Textbox@{Textbox}!move@{move}}
+\index{move@{move}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Textbox\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 66 of file Textbox.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_textbox_ad89bdee3ead7d89dca3e1ba1468c272c}{}\label{class_textbox_ad89bdee3ead7d89dca3e1ba1468c272c} 
+\index{Textbox@{Textbox}!col@{col}}
+\index{col@{col}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} Textbox\+::col}
+
+
+
+Definition at line 33 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a45eac53d4f51e36a8c0acfdc9df2f0cb}{}\label{class_textbox_a45eac53d4f51e36a8c0acfdc9df2f0cb} 
+\index{Textbox@{Textbox}!font@{font}}
+\index{font@{font}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font Textbox\+::font}
+
+
+
+Definition at line 27 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a8b9942b46c9fab7ed505918750174006}{}\label{class_textbox_a8b9942b46c9fab7ed505918750174006} 
+\index{Textbox@{Textbox}!startX@{startX}}
+\index{startX@{startX}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily int Textbox\+::startX =400}
+
+
+
+float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title 
+
+
+
+Definition at line 41 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a7cc50c3fa4ef2866a7d2acc7f2d5565b}{}\label{class_textbox_a7cc50c3fa4ef2866a7d2acc7f2d5565b} 
+\index{Textbox@{Textbox}!startY@{startY}}
+\index{startY@{startY}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{startY}{startY}}
+{\footnotesize\ttfamily int Textbox\+::startY =20}
+
+
+
+Definition at line 42 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a4f79784c45871da706e57c8435c8dff3}{}\label{class_textbox_a4f79784c45871da706e57c8435c8dff3} 
+\index{Textbox@{Textbox}!text@{text}}
+\index{text@{text}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily sf\+::\+Text Textbox\+::text}
+
+
+
+Definition at line 21 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a5c229bd6795f3ab970ee0bf10252613d}{}\label{class_textbox_a5c229bd6795f3ab970ee0bf10252613d} 
+\index{Textbox@{Textbox}!text1@{text1}}
+\index{text1@{text1}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{text1}{text1}}
+{\footnotesize\ttfamily sf\+::\+Text Textbox\+::text1}
+
+
+
+Definition at line 22 of file Textbox.\+h.
+
+\hypertarget{class_textbox_adafebfa39688753f259c72a7fcdcc3ad}{}\label{class_textbox_adafebfa39688753f259c72a7fcdcc3ad} 
+\index{Textbox@{Textbox}!text2@{text2}}
+\index{text2@{text2}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{text2}{text2}}
+{\footnotesize\ttfamily sf\+::\+Text Textbox\+::text2}
+
+
+
+Definition at line 23 of file Textbox.\+h.
+
+\hypertarget{class_textbox_abccc498be23e0a6d7271a4692ae50289}{}\label{class_textbox_abccc498be23e0a6d7271a4692ae50289} 
+\index{Textbox@{Textbox}!text3@{text3}}
+\index{text3@{text3}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{text3}{text3}}
+{\footnotesize\ttfamily sf\+::\+Text Textbox\+::text3}
+
+
+
+Definition at line 24 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a37cfcc698bdbb5014fdc6ecf56c083c8}{}\label{class_textbox_a37cfcc698bdbb5014fdc6ecf56c083c8} 
+\index{Textbox@{Textbox}!text4@{text4}}
+\index{text4@{text4}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{text4}{text4}}
+{\footnotesize\ttfamily sf\+::\+Text Textbox\+::text4}
+
+
+
+Definition at line 25 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a4f9b578979f37d545571532e41148a45}{}\label{class_textbox_a4f9b578979f37d545571532e41148a45} 
+\index{Textbox@{Textbox}!text5@{text5}}
+\index{text5@{text5}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{text5}{text5}}
+{\footnotesize\ttfamily sf\+::\+Text Textbox\+::text5}
+
+
+
+Definition at line 26 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a6da196e36384e83b7dc9fa9f81848536}{}\label{class_textbox_a6da196e36384e83b7dc9fa9f81848536} 
+\index{Textbox@{Textbox}!textbox@{textbox}}
+\index{textbox@{textbox}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{textbox}{textbox}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Textbox\+::textbox}
+
+
+
+Definition at line 30 of file Textbox.\+h.
+
+\hypertarget{class_textbox_a43cc0d802e43397e373997b8595073ad}{}\label{class_textbox_a43cc0d802e43397e373997b8595073ad} 
+\index{Textbox@{Textbox}!vindu@{vindu}}
+\index{vindu@{vindu}!Textbox@{Textbox}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Textbox\+::vindu}
+
+
+
+Definition at line 32 of file Textbox.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/\hyperlink{_textbox_8h}{Textbox.\+h}\item 
+Actor/\hyperlink{_textbox_8cpp}{Textbox.\+cpp}\end{DoxyCompactItemize}

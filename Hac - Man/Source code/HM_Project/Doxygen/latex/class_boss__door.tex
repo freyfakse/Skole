@@ -1,0 +1,237 @@
+\hypertarget{class_boss__door}{}\section{Boss\+\_\+door Class Reference}
+\label{class_boss__door}\index{Boss\+\_\+door@{Boss\+\_\+door}}
+
+
+{\ttfamily \#include $<$Boss\+\_\+door.\+h$>$}
+
+Inheritance diagram for Boss\+\_\+door\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_boss__door}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boss__door_a9714a08a688e8dc4819db1ade1d502fd}{Boss\+\_\+door} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{class_boss__door_a591dd5dd3815c47b2f8390fe63953ac2}{col}, int x\+Inn, int y\+Inn)
+\item 
+void \hyperlink{class_boss__door_ac2f0b88b5ca332380602f029f0f83e17}{jump} ()
+\item 
+void \hyperlink{class_boss__door_a27456c378555a03310cd4f25b167867c}{move} ()
+\item 
+void \hyperlink{class_boss__door_a093ca3c013ae4f5f703675bc6d3de9f0}{draw} ()
+\item 
+void \hyperlink{class_boss__door_ab80f398f1c479f78c2b36409c311ccb5}{interaction} (std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$ actor\+\_\+array)
+\item 
+void \hyperlink{class_boss__door_ab47df13fb29b88a5be09fb7062384a50}{interaction\+\_\+effect} (\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$actor)
+\item 
+void \hyperlink{class_boss__door_acee93d541699ed109dfae8f05f0ea39e}{death} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{class_boss__door_a8b719291e134d7cf4bee8fd2372d3087}{door}
+\item 
+\hyperlink{classanimatonsprites}{animatonsprites} \hyperlink{class_boss__door_a78f03723848d84a1eae62fafa7933f92}{animation}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_boss__door_a41a5f7ad972a57cc11fa7629d4cce412}{vindu}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{class_boss__door_a591dd5dd3815c47b2f8390fe63953ac2}{col}
+\item 
+float \hyperlink{class_boss__door_a780a847f966efcd3073642ade6a7c97f}{gravity} = 5
+\item 
+int \hyperlink{class_boss__door_aa9c098587ea1c0919540f838e28c1440}{startX} =400
+\begin{DoxyCompactList}\small\item\em float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title \end{DoxyCompactList}\item 
+int \hyperlink{class_boss__door_a617e52e98386b7202fc78a24c4f5037d}{startY} =20
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Boss\+\_\+door.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_boss__door_a9714a08a688e8dc4819db1ade1d502fd}{}\label{class_boss__door_a9714a08a688e8dc4819db1ade1d502fd} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!Boss\+\_\+door@{Boss\+\_\+door}}
+\index{Boss\+\_\+door@{Boss\+\_\+door}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{Boss\+\_\+door()}{Boss\_door()}}
+{\footnotesize\ttfamily Boss\+\_\+door\+::\+Boss\+\_\+door (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file Boss\+\_\+door.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_boss__door_acee93d541699ed109dfae8f05f0ea39e}{}\label{class_boss__door_acee93d541699ed109dfae8f05f0ea39e} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!death@{death}}
+\index{death@{death}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void Boss\+\_\+door\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 92 of file Boss\+\_\+door.\+cpp.
+
+\hypertarget{class_boss__door_a093ca3c013ae4f5f703675bc6d3de9f0}{}\label{class_boss__door_a093ca3c013ae4f5f703675bc6d3de9f0} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!draw@{draw}}
+\index{draw@{draw}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Boss\+\_\+door\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 36 of file Boss\+\_\+door.\+cpp.
+
+\hypertarget{class_boss__door_ab80f398f1c479f78c2b36409c311ccb5}{}\label{class_boss__door_ab80f398f1c479f78c2b36409c311ccb5} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!interaction@{interaction}}
+\index{interaction@{interaction}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{interaction()}{interaction()}}
+{\footnotesize\ttfamily void Boss\+\_\+door\+::interaction (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$}]{actor\+\_\+array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a87d1e079d8576fa99592a60b38a04a1b}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 50 of file Boss\+\_\+door.\+cpp.
+
+\hypertarget{class_boss__door_ab47df13fb29b88a5be09fb7062384a50}{}\label{class_boss__door_ab47df13fb29b88a5be09fb7062384a50} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!interaction\+\_\+effect@{interaction\+\_\+effect}}
+\index{interaction\+\_\+effect@{interaction\+\_\+effect}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{interaction\+\_\+effect()}{interaction\_effect()}}
+{\footnotesize\ttfamily void Boss\+\_\+door\+::interaction\+\_\+effect (\begin{DoxyParamCaption}\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af3488ca470eb77255060142fd167aa72}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 75 of file Boss\+\_\+door.\+cpp.
+
+\hypertarget{class_boss__door_ac2f0b88b5ca332380602f029f0f83e17}{}\label{class_boss__door_ac2f0b88b5ca332380602f029f0f83e17} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!jump@{jump}}
+\index{jump@{jump}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Boss\+\_\+door\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 46 of file Boss\+\_\+door.\+cpp.
+
+\hypertarget{class_boss__door_a27456c378555a03310cd4f25b167867c}{}\label{class_boss__door_a27456c378555a03310cd4f25b167867c} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!move@{move}}
+\index{move@{move}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Boss\+\_\+door\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 31 of file Boss\+\_\+door.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_boss__door_a78f03723848d84a1eae62fafa7933f92}{}\label{class_boss__door_a78f03723848d84a1eae62fafa7933f92} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!animation@{animation}}
+\index{animation@{animation}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily \hyperlink{classanimatonsprites}{animatonsprites} Boss\+\_\+door\+::animation}
+
+
+
+Definition at line 21 of file Boss\+\_\+door.\+h.
+
+\hypertarget{class_boss__door_a591dd5dd3815c47b2f8390fe63953ac2}{}\label{class_boss__door_a591dd5dd3815c47b2f8390fe63953ac2} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!col@{col}}
+\index{col@{col}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} Boss\+\_\+door\+::col}
+
+
+
+Definition at line 24 of file Boss\+\_\+door.\+h.
+
+\hypertarget{class_boss__door_a8b719291e134d7cf4bee8fd2372d3087}{}\label{class_boss__door_a8b719291e134d7cf4bee8fd2372d3087} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!door@{door}}
+\index{door@{door}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{door}{door}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Boss\+\_\+door\+::door}
+
+
+
+Definition at line 20 of file Boss\+\_\+door.\+h.
+
+\hypertarget{class_boss__door_a780a847f966efcd3073642ade6a7c97f}{}\label{class_boss__door_a780a847f966efcd3073642ade6a7c97f} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!gravity@{gravity}}
+\index{gravity@{gravity}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{gravity}{gravity}}
+{\footnotesize\ttfamily float Boss\+\_\+door\+::gravity = 5}
+
+
+
+Definition at line 26 of file Boss\+\_\+door.\+h.
+
+\hypertarget{class_boss__door_aa9c098587ea1c0919540f838e28c1440}{}\label{class_boss__door_aa9c098587ea1c0919540f838e28c1440} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!startX@{startX}}
+\index{startX@{startX}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily int Boss\+\_\+door\+::startX =400}
+
+
+
+float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title 
+
+
+
+Definition at line 32 of file Boss\+\_\+door.\+h.
+
+\hypertarget{class_boss__door_a617e52e98386b7202fc78a24c4f5037d}{}\label{class_boss__door_a617e52e98386b7202fc78a24c4f5037d} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!startY@{startY}}
+\index{startY@{startY}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{startY}{startY}}
+{\footnotesize\ttfamily int Boss\+\_\+door\+::startY =20}
+
+
+
+Definition at line 33 of file Boss\+\_\+door.\+h.
+
+\hypertarget{class_boss__door_a41a5f7ad972a57cc11fa7629d4cce412}{}\label{class_boss__door_a41a5f7ad972a57cc11fa7629d4cce412} 
+\index{Boss\+\_\+door@{Boss\+\_\+door}!vindu@{vindu}}
+\index{vindu@{vindu}!Boss\+\_\+door@{Boss\+\_\+door}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Boss\+\_\+door\+::vindu}
+
+
+
+Definition at line 23 of file Boss\+\_\+door.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/enemy/\hyperlink{_boss__door_8h}{Boss\+\_\+door.\+h}\item 
+Actor/enemy/\hyperlink{_boss__door_8cpp}{Boss\+\_\+door.\+cpp}\end{DoxyCompactItemize}

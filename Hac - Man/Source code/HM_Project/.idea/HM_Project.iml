@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Super_Class.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/enemy_goomba.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/game_state.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Super_Class.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hero.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Super_State.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Super_State.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/actor_class.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/game_state.h" isTestSource="false" />
+<<<<<<< HEAD
+      <sourceFolder url="file://$MODULE_DIR$/actor_class.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/menu_state.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hero.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/menu_state.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/enemy_goomba.cpp" isTestSource="false" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/Super_Class.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hero.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projectile.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ShotingMechanic.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Super_State.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projectile.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ShotingMechanic.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/config.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Super_State.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/menu_state.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/game_state.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hero.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/menu_state.cpp" isTestSource="false" />
+>>>>>>> a86fa3269e4b1f6ed6ba3c2328b651390e5b3379
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file://C:/MinGW/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include" />
+          <root url="file://C:/MinGW/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include-fixed" />
+          <root url="file://C:/MinGW/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/x86_64-w64-mingw32/include" />
+          <root url="file://C:/dev/libs/SFML/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://C:/MinGW/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include" />
+          <root url="file://C:/MinGW/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include-fixed" />
+          <root url="file://C:/MinGW/mingw-w64/x86_64-6.1.0-posix-seh-rt_v5-rev1/mingw64/x86_64-w64-mingw32/include" />
+          <root url="file://C:/dev/libs/SFML/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

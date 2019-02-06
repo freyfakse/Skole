@@ -1,0 +1,217 @@
+\hypertarget{class_enemy___goomba}{}\section{Enemy\+\_\+\+Goomba Class Reference}
+\label{class_enemy___goomba}\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+
+
+{\ttfamily \#include $<$enemy\+\_\+goomba.\+h$>$}
+
+Inheritance diagram for Enemy\+\_\+\+Goomba\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy___goomba}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_enemy___goomba_af5a9b3d667381890746453f0dfaa50e6}{Enemy\+\_\+\+Goomba} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{class_enemy___goomba_a435110bcd5fc30fd2ff0a0d9347c49f3}{col}, int x\+Inn, int y\+Inn)
+\item 
+void \hyperlink{class_enemy___goomba_ab07621304a0b92c4559679071c060439}{jump} ()
+\item 
+void \hyperlink{class_enemy___goomba_a0b72ff73bb4f64d4c659a5142862fd1f}{move} ()
+\item 
+void \hyperlink{class_enemy___goomba_a1947885e29f42889e42947462a9caeb3}{draw} ()
+\item 
+void \hyperlink{class_enemy___goomba_a09cd52bddf5aa44b94d85adeefa46620}{death} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Music \hyperlink{class_enemy___goomba_ae247248654854e3be4e5cecc6bea1b08}{sound}
+\item 
+\hyperlink{classanimatonsprites}{animatonsprites} \hyperlink{class_enemy___goomba_a6e754ed916291f62f4ece73a30903f68}{animation}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{class_enemy___goomba_a06e972cccfe94936721859c90729d3f3}{goomba}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_enemy___goomba_ab4eed505739ee97ea1c682c04b642537}{vindu}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{class_enemy___goomba_a435110bcd5fc30fd2ff0a0d9347c49f3}{col}
+\item 
+float \hyperlink{class_enemy___goomba_a04e563eef4eda0f20083576ceed3669a}{gravity} = 5
+\item 
+int \hyperlink{class_enemy___goomba_a4f762d1bb68be95f6ed06a25d5f61721}{startX} =400
+\begin{DoxyCompactList}\small\item\em float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title \end{DoxyCompactList}\item 
+int \hyperlink{class_enemy___goomba_a8d459a604218f1a007e8e62ba95dd70a}{startY} =20
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file enemy\+\_\+goomba.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_enemy___goomba_af5a9b3d667381890746453f0dfaa50e6}{}\label{class_enemy___goomba_af5a9b3d667381890746453f0dfaa50e6} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{Enemy\+\_\+\+Goomba()}{Enemy\_Goomba()}}
+{\footnotesize\ttfamily Enemy\+\_\+\+Goomba\+::\+Enemy\+\_\+\+Goomba (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file enemy\+\_\+goomba.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_enemy___goomba_a09cd52bddf5aa44b94d85adeefa46620}{}\label{class_enemy___goomba_a09cd52bddf5aa44b94d85adeefa46620} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!death@{death}}
+\index{death@{death}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void Enemy\+\_\+\+Goomba\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 88 of file enemy\+\_\+goomba.\+cpp.
+
+\hypertarget{class_enemy___goomba_a1947885e29f42889e42947462a9caeb3}{}\label{class_enemy___goomba_a1947885e29f42889e42947462a9caeb3} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!draw@{draw}}
+\index{draw@{draw}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Enemy\+\_\+\+Goomba\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 79 of file enemy\+\_\+goomba.\+cpp.
+
+\hypertarget{class_enemy___goomba_ab07621304a0b92c4559679071c060439}{}\label{class_enemy___goomba_ab07621304a0b92c4559679071c060439} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!jump@{jump}}
+\index{jump@{jump}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Enemy\+\_\+\+Goomba\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 86 of file enemy\+\_\+goomba.\+cpp.
+
+\hypertarget{class_enemy___goomba_a0b72ff73bb4f64d4c659a5142862fd1f}{}\label{class_enemy___goomba_a0b72ff73bb4f64d4c659a5142862fd1f} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!move@{move}}
+\index{move@{move}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Enemy\+\_\+\+Goomba\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 47 of file enemy\+\_\+goomba.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_enemy___goomba_a6e754ed916291f62f4ece73a30903f68}{}\label{class_enemy___goomba_a6e754ed916291f62f4ece73a30903f68} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!animation@{animation}}
+\index{animation@{animation}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily \hyperlink{classanimatonsprites}{animatonsprites} Enemy\+\_\+\+Goomba\+::animation}
+
+
+
+Definition at line 19 of file enemy\+\_\+goomba.\+h.
+
+\hypertarget{class_enemy___goomba_a435110bcd5fc30fd2ff0a0d9347c49f3}{}\label{class_enemy___goomba_a435110bcd5fc30fd2ff0a0d9347c49f3} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!col@{col}}
+\index{col@{col}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} Enemy\+\_\+\+Goomba\+::col}
+
+
+
+Definition at line 23 of file enemy\+\_\+goomba.\+h.
+
+\hypertarget{class_enemy___goomba_a06e972cccfe94936721859c90729d3f3}{}\label{class_enemy___goomba_a06e972cccfe94936721859c90729d3f3} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!goomba@{goomba}}
+\index{goomba@{goomba}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{goomba}{goomba}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Enemy\+\_\+\+Goomba\+::goomba}
+
+
+
+Definition at line 20 of file enemy\+\_\+goomba.\+h.
+
+\hypertarget{class_enemy___goomba_a04e563eef4eda0f20083576ceed3669a}{}\label{class_enemy___goomba_a04e563eef4eda0f20083576ceed3669a} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!gravity@{gravity}}
+\index{gravity@{gravity}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{gravity}{gravity}}
+{\footnotesize\ttfamily float Enemy\+\_\+\+Goomba\+::gravity = 5}
+
+
+
+Definition at line 25 of file enemy\+\_\+goomba.\+h.
+
+\hypertarget{class_enemy___goomba_ae247248654854e3be4e5cecc6bea1b08}{}\label{class_enemy___goomba_ae247248654854e3be4e5cecc6bea1b08} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!sound@{sound}}
+\index{sound@{sound}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily sf\+::\+Music Enemy\+\_\+\+Goomba\+::sound}
+
+
+
+Definition at line 18 of file enemy\+\_\+goomba.\+h.
+
+\hypertarget{class_enemy___goomba_a4f762d1bb68be95f6ed06a25d5f61721}{}\label{class_enemy___goomba_a4f762d1bb68be95f6ed06a25d5f61721} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!startX@{startX}}
+\index{startX@{startX}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily int Enemy\+\_\+\+Goomba\+::startX =400}
+
+
+
+float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title 
+
+
+
+Definition at line 31 of file enemy\+\_\+goomba.\+h.
+
+\hypertarget{class_enemy___goomba_a8d459a604218f1a007e8e62ba95dd70a}{}\label{class_enemy___goomba_a8d459a604218f1a007e8e62ba95dd70a} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!startY@{startY}}
+\index{startY@{startY}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{startY}{startY}}
+{\footnotesize\ttfamily int Enemy\+\_\+\+Goomba\+::startY =20}
+
+
+
+Definition at line 32 of file enemy\+\_\+goomba.\+h.
+
+\hypertarget{class_enemy___goomba_ab4eed505739ee97ea1c682c04b642537}{}\label{class_enemy___goomba_ab4eed505739ee97ea1c682c04b642537} 
+\index{Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}!vindu@{vindu}}
+\index{vindu@{vindu}!Enemy\+\_\+\+Goomba@{Enemy\+\_\+\+Goomba}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Enemy\+\_\+\+Goomba\+::vindu}
+
+
+
+Definition at line 22 of file enemy\+\_\+goomba.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/enemy/\hyperlink{enemy__goomba_8h}{enemy\+\_\+goomba.\+h}\item 
+Actor/enemy/\hyperlink{enemy__goomba_8cpp}{enemy\+\_\+goomba.\+cpp}\end{DoxyCompactItemize}

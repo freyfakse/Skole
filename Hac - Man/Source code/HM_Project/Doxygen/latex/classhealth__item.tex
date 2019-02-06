@@ -1,0 +1,209 @@
+\hypertarget{classhealth__item}{}\section{health\+\_\+item Class Reference}
+\label{classhealth__item}\index{health\+\_\+item@{health\+\_\+item}}
+
+
+{\ttfamily \#include $<$health\+\_\+item.\+h$>$}
+
+Inheritance diagram for health\+\_\+item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classhealth__item}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classhealth__item_a518db4a537e9102a4fe0b9f18ab3de91}{health\+\_\+item} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{classhealth__item_a9abffa822bf114c7a57f8516deefeb57}{col}, int x\+Inn, int y\+Inn)
+\item 
+void \hyperlink{classhealth__item_a97005bdbe125d68fb6cd5561081674e2}{interaction\+\_\+effect} (\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$actor)
+\item 
+void \hyperlink{classhealth__item_af7e8d841f469ac5e225429aaddb06844}{jump} ()
+\item 
+void \hyperlink{classhealth__item_a60ce7f7099abb26dcc159fdf115d63eb}{move} ()
+\item 
+void \hyperlink{classhealth__item_aa9b9410c9e524d807327e682e11d1482}{draw} ()
+\item 
+void \hyperlink{classhealth__item_a9835f457ffbd1a9e157eac9423ae1201}{death} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{classhealth__item_a199636ed174bbbca7fee42dffbc3fd86}{heart}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{classhealth__item_ab502a99715215a683861ce27258dcc7d}{vindu}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{classhealth__item_a9abffa822bf114c7a57f8516deefeb57}{col}
+\item 
+float \hyperlink{classhealth__item_af36b663f6a9950d15be362d964bdde40}{gravity} = 5
+\item 
+int \hyperlink{classhealth__item_a23c7b1b11d688e48504c21d52b7d9fdf}{startX} =400
+\begin{DoxyCompactList}\small\item\em float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title \end{DoxyCompactList}\item 
+int \hyperlink{classhealth__item_a4f3840b30f8526f3d8d9ea1823c1e406}{startY} =20
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file health\+\_\+item.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classhealth__item_a518db4a537e9102a4fe0b9f18ab3de91}{}\label{classhealth__item_a518db4a537e9102a4fe0b9f18ab3de91} 
+\index{health\+\_\+item@{health\+\_\+item}!health\+\_\+item@{health\+\_\+item}}
+\index{health\+\_\+item@{health\+\_\+item}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{health\+\_\+item()}{health\_item()}}
+{\footnotesize\ttfamily health\+\_\+item\+::health\+\_\+item (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file health\+\_\+item.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhealth__item_a9835f457ffbd1a9e157eac9423ae1201}{}\label{classhealth__item_a9835f457ffbd1a9e157eac9423ae1201} 
+\index{health\+\_\+item@{health\+\_\+item}!death@{death}}
+\index{death@{death}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void health\+\_\+item\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 53 of file health\+\_\+item.\+cpp.
+
+\hypertarget{classhealth__item_aa9b9410c9e524d807327e682e11d1482}{}\label{classhealth__item_aa9b9410c9e524d807327e682e11d1482} 
+\index{health\+\_\+item@{health\+\_\+item}!draw@{draw}}
+\index{draw@{draw}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void health\+\_\+item\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 33 of file health\+\_\+item.\+cpp.
+
+\hypertarget{classhealth__item_a97005bdbe125d68fb6cd5561081674e2}{}\label{classhealth__item_a97005bdbe125d68fb6cd5561081674e2} 
+\index{health\+\_\+item@{health\+\_\+item}!interaction\+\_\+effect@{interaction\+\_\+effect}}
+\index{interaction\+\_\+effect@{interaction\+\_\+effect}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{interaction\+\_\+effect()}{interaction\_effect()}}
+{\footnotesize\ttfamily void health\+\_\+item\+::interaction\+\_\+effect (\begin{DoxyParamCaption}\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af3488ca470eb77255060142fd167aa72}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 39 of file health\+\_\+item.\+cpp.
+
+\hypertarget{classhealth__item_af7e8d841f469ac5e225429aaddb06844}{}\label{classhealth__item_af7e8d841f469ac5e225429aaddb06844} 
+\index{health\+\_\+item@{health\+\_\+item}!jump@{jump}}
+\index{jump@{jump}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void health\+\_\+item\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 50 of file health\+\_\+item.\+cpp.
+
+\hypertarget{classhealth__item_a60ce7f7099abb26dcc159fdf115d63eb}{}\label{classhealth__item_a60ce7f7099abb26dcc159fdf115d63eb} 
+\index{health\+\_\+item@{health\+\_\+item}!move@{move}}
+\index{move@{move}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void health\+\_\+item\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 29 of file health\+\_\+item.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classhealth__item_a9abffa822bf114c7a57f8516deefeb57}{}\label{classhealth__item_a9abffa822bf114c7a57f8516deefeb57} 
+\index{health\+\_\+item@{health\+\_\+item}!col@{col}}
+\index{col@{col}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} health\+\_\+item\+::col}
+
+
+
+Definition at line 27 of file health\+\_\+item.\+h.
+
+\hypertarget{classhealth__item_af36b663f6a9950d15be362d964bdde40}{}\label{classhealth__item_af36b663f6a9950d15be362d964bdde40} 
+\index{health\+\_\+item@{health\+\_\+item}!gravity@{gravity}}
+\index{gravity@{gravity}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{gravity}{gravity}}
+{\footnotesize\ttfamily float health\+\_\+item\+::gravity = 5}
+
+
+
+Definition at line 29 of file health\+\_\+item.\+h.
+
+\hypertarget{classhealth__item_a199636ed174bbbca7fee42dffbc3fd86}{}\label{classhealth__item_a199636ed174bbbca7fee42dffbc3fd86} 
+\index{health\+\_\+item@{health\+\_\+item}!heart@{heart}}
+\index{heart@{heart}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{heart}{heart}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape health\+\_\+item\+::heart}
+
+
+
+Definition at line 24 of file health\+\_\+item.\+h.
+
+\hypertarget{classhealth__item_a23c7b1b11d688e48504c21d52b7d9fdf}{}\label{classhealth__item_a23c7b1b11d688e48504c21d52b7d9fdf} 
+\index{health\+\_\+item@{health\+\_\+item}!startX@{startX}}
+\index{startX@{startX}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily int health\+\_\+item\+::startX =400}
+
+
+
+float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title 
+
+
+
+Definition at line 35 of file health\+\_\+item.\+h.
+
+\hypertarget{classhealth__item_a4f3840b30f8526f3d8d9ea1823c1e406}{}\label{classhealth__item_a4f3840b30f8526f3d8d9ea1823c1e406} 
+\index{health\+\_\+item@{health\+\_\+item}!startY@{startY}}
+\index{startY@{startY}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{startY}{startY}}
+{\footnotesize\ttfamily int health\+\_\+item\+::startY =20}
+
+
+
+Definition at line 36 of file health\+\_\+item.\+h.
+
+\hypertarget{classhealth__item_ab502a99715215a683861ce27258dcc7d}{}\label{classhealth__item_ab502a99715215a683861ce27258dcc7d} 
+\index{health\+\_\+item@{health\+\_\+item}!vindu@{vindu}}
+\index{vindu@{vindu}!health\+\_\+item@{health\+\_\+item}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& health\+\_\+item\+::vindu}
+
+
+
+Definition at line 26 of file health\+\_\+item.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/enemy/\hyperlink{health__item_8h}{health\+\_\+item.\+h}\item 
+Actor/enemy/\hyperlink{health__item_8cpp}{health\+\_\+item.\+cpp}\end{DoxyCompactItemize}

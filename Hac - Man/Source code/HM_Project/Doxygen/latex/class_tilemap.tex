@@ -1,0 +1,193 @@
+\hypertarget{class_tilemap}{}\section{Tilemap Class Reference}
+\label{class_tilemap}\index{Tilemap@{Tilemap}}
+
+
+{\ttfamily \#include $<$Tilemap.\+h$>$}
+
+Inheritance diagram for Tilemap\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tilemap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{class_tilemap_aaf6018db69a5590cd7346bd4de98fc35}{load\+Map\+From\+File} (std\+::string level\+Loc)
+\item 
+bool \hyperlink{class_tilemap_a20ae966645360ac69d313811539dcbcc}{load} (\hyperlink{class_level}{Level} lastet\+Level)
+\item 
+void \hyperlink{class_tilemap_aa987cd1aa8ebf71dbe2333dafe2b4039}{sort\+Spawn\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_super___tile}{Super\+\_\+\+Tile} $\ast$ $>$ \hyperlink{class_tilemap_a49439fd862d03bdcc26d0c3b5156bc7a}{tile\+List}
+\item 
+std\+::vector$<$ \hyperlink{class_solid___tile}{Solid\+\_\+\+Tile} $\ast$ $>$ \hyperlink{class_tilemap_aecd9cc5f70702439e13fd6213d176f14}{solid\+Tile\+List}
+\item 
+std\+::vector$<$ \hyperlink{class_action___tile}{Action\+\_\+\+Tile} $\ast$ $>$ \hyperlink{class_tilemap_ad855bfd20bf768d4f712fe40c5fcaeea}{action\+Tile\+List}
+\item 
+std\+::vector$<$ \hyperlink{class_spawn___tile}{Spawn\+\_\+\+Tile} $\ast$ $>$ \hyperlink{class_tilemap_a41ae114e32893255ef339dd26c635039}{spawn\+Tile\+List}
+\item 
+\hyperlink{class_spawn___tile}{Spawn\+\_\+\+Tile} $\ast$ \hyperlink{class_tilemap_a0b9b8cb0dae83e1729ac5d1cc8411395}{hero\+Spawn}
+\item 
+int \hyperlink{class_tilemap_a20a5ecfd38a3612d4294eb19da4f36ea}{length}
+\item 
+int \hyperlink{class_tilemap_a65d3108ef1805edef0df66843e8d5e6a}{height}
+\item 
+int \hyperlink{class_tilemap_a07d9546ed98a4da502902ebaa1d774ca}{tilesize}
+\item 
+bool \hyperlink{class_tilemap_af966f7c50449d758cb11abdec5767f64}{destroyed} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file Tilemap.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tilemap_a20ae966645360ac69d313811539dcbcc}{}\label{class_tilemap_a20ae966645360ac69d313811539dcbcc} 
+\index{Tilemap@{Tilemap}!load@{load}}
+\index{load@{load}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily bool Tilemap\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{class_level}{Level}}]{lastet\+Level }\end{DoxyParamCaption})}
+
+Laster inn teksturer og mapper dem til skjermen. Lagrer solide tiles inn i et array kalt tile\+List 
+\begin{DoxyParams}{Parameters}
+{\em level\+Loc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 27 of file Tilemap.\+cpp.
+
+\hypertarget{class_tilemap_aaf6018db69a5590cd7346bd4de98fc35}{}\label{class_tilemap_aaf6018db69a5590cd7346bd4de98fc35} 
+\index{Tilemap@{Tilemap}!load\+Map\+From\+File@{load\+Map\+From\+File}}
+\index{load\+Map\+From\+File@{load\+Map\+From\+File}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{load\+Map\+From\+File()}{loadMapFromFile()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Tilemap\+::load\+Map\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{level\+Loc }\end{DoxyParamCaption})}
+
+Laster inn txt filen og plasserer tallene in en array. 
+\begin{DoxyParams}{Parameters}
+{\em level\+Loc} & stedet hvor levelen er lagret \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 8 of file Tilemap.\+cpp.
+
+\hypertarget{class_tilemap_aa987cd1aa8ebf71dbe2333dafe2b4039}{}\label{class_tilemap_aa987cd1aa8ebf71dbe2333dafe2b4039} 
+\index{Tilemap@{Tilemap}!sort\+Spawn\+List@{sort\+Spawn\+List}}
+\index{sort\+Spawn\+List@{sort\+Spawn\+List}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{sort\+Spawn\+List()}{sortSpawnList()}}
+{\footnotesize\ttfamily void Tilemap\+::sort\+Spawn\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_tilemap_ad855bfd20bf768d4f712fe40c5fcaeea}{}\label{class_tilemap_ad855bfd20bf768d4f712fe40c5fcaeea} 
+\index{Tilemap@{Tilemap}!action\+Tile\+List@{action\+Tile\+List}}
+\index{action\+Tile\+List@{action\+Tile\+List}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{action\+Tile\+List}{actionTileList}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_action___tile}{Action\+\_\+\+Tile}$\ast$$>$ Tilemap\+::action\+Tile\+List}
+
+
+
+Definition at line 28 of file Tilemap.\+h.
+
+\hypertarget{class_tilemap_af966f7c50449d758cb11abdec5767f64}{}\label{class_tilemap_af966f7c50449d758cb11abdec5767f64} 
+\index{Tilemap@{Tilemap}!destroyed@{destroyed}}
+\index{destroyed@{destroyed}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{destroyed}{destroyed}}
+{\footnotesize\ttfamily bool Tilemap\+::destroyed = false}
+
+
+
+Definition at line 45 of file Tilemap.\+h.
+
+\hypertarget{class_tilemap_a65d3108ef1805edef0df66843e8d5e6a}{}\label{class_tilemap_a65d3108ef1805edef0df66843e8d5e6a} 
+\index{Tilemap@{Tilemap}!height@{height}}
+\index{height@{height}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Tilemap\+::height}
+
+
+
+Definition at line 42 of file Tilemap.\+h.
+
+\hypertarget{class_tilemap_a0b9b8cb0dae83e1729ac5d1cc8411395}{}\label{class_tilemap_a0b9b8cb0dae83e1729ac5d1cc8411395} 
+\index{Tilemap@{Tilemap}!hero\+Spawn@{hero\+Spawn}}
+\index{hero\+Spawn@{hero\+Spawn}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{hero\+Spawn}{heroSpawn}}
+{\footnotesize\ttfamily \hyperlink{class_spawn___tile}{Spawn\+\_\+\+Tile}$\ast$ Tilemap\+::hero\+Spawn}
+
+
+
+Definition at line 30 of file Tilemap.\+h.
+
+\hypertarget{class_tilemap_a20a5ecfd38a3612d4294eb19da4f36ea}{}\label{class_tilemap_a20a5ecfd38a3612d4294eb19da4f36ea} 
+\index{Tilemap@{Tilemap}!length@{length}}
+\index{length@{length}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily int Tilemap\+::length}
+
+
+
+Definition at line 41 of file Tilemap.\+h.
+
+\hypertarget{class_tilemap_aecd9cc5f70702439e13fd6213d176f14}{}\label{class_tilemap_aecd9cc5f70702439e13fd6213d176f14} 
+\index{Tilemap@{Tilemap}!solid\+Tile\+List@{solid\+Tile\+List}}
+\index{solid\+Tile\+List@{solid\+Tile\+List}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{solid\+Tile\+List}{solidTileList}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_solid___tile}{Solid\+\_\+\+Tile}$\ast$$>$ Tilemap\+::solid\+Tile\+List}
+
+
+
+Definition at line 27 of file Tilemap.\+h.
+
+\hypertarget{class_tilemap_a41ae114e32893255ef339dd26c635039}{}\label{class_tilemap_a41ae114e32893255ef339dd26c635039} 
+\index{Tilemap@{Tilemap}!spawn\+Tile\+List@{spawn\+Tile\+List}}
+\index{spawn\+Tile\+List@{spawn\+Tile\+List}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{spawn\+Tile\+List}{spawnTileList}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_spawn___tile}{Spawn\+\_\+\+Tile}$\ast$$>$ Tilemap\+::spawn\+Tile\+List}
+
+
+
+Definition at line 29 of file Tilemap.\+h.
+
+\hypertarget{class_tilemap_a49439fd862d03bdcc26d0c3b5156bc7a}{}\label{class_tilemap_a49439fd862d03bdcc26d0c3b5156bc7a} 
+\index{Tilemap@{Tilemap}!tile\+List@{tile\+List}}
+\index{tile\+List@{tile\+List}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{tile\+List}{tileList}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_super___tile}{Super\+\_\+\+Tile}$\ast$$>$ Tilemap\+::tile\+List}
+
+
+
+Definition at line 26 of file Tilemap.\+h.
+
+\hypertarget{class_tilemap_a07d9546ed98a4da502902ebaa1d774ca}{}\label{class_tilemap_a07d9546ed98a4da502902ebaa1d774ca} 
+\index{Tilemap@{Tilemap}!tilesize@{tilesize}}
+\index{tilesize@{tilesize}!Tilemap@{Tilemap}}
+\subsubsection{\texorpdfstring{tilesize}{tilesize}}
+{\footnotesize\ttfamily int Tilemap\+::tilesize}
+
+
+
+Definition at line 43 of file Tilemap.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tile/\hyperlink{_tilemap_8h}{Tilemap.\+h}\item 
+Tile/\hyperlink{_tilemap_8cpp}{Tilemap.\+cpp}\end{DoxyCompactItemize}

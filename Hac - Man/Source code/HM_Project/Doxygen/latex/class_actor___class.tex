@@ -1,0 +1,498 @@
+\hypertarget{class_actor___class}{}\section{Actor\+\_\+\+Class Class Reference}
+\label{class_actor___class}\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+
+
+{\ttfamily \#include $<$actor\+\_\+class.\+h$>$}
+
+Inheritance diagram for Actor\+\_\+\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_actor___class}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{move} ()
+\item 
+virtual void \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{draw} ()
+\item 
+virtual void \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{jump} ()
+\item 
+virtual void \hyperlink{class_actor___class_ab8e23ffae108da3b8eda67c6753bdae0}{action} ()
+\item 
+virtual void \hyperlink{class_actor___class_a87d1e079d8576fa99592a60b38a04a1b}{interaction} (std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$ actor\+\_\+array)
+\item 
+virtual void \hyperlink{class_actor___class_af3488ca470eb77255060142fd167aa72}{interaction\+\_\+effect} (\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$actor)
+\item 
+virtual void \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{death} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Texture \hyperlink{class_actor___class_a28e08b1eea7303fb8afbde256cddc081}{sprite\+Texture}
+\item 
+sf\+::\+Texture \hyperlink{class_actor___class_ac01a0438aa7e21d9c6ef4110546b1d72}{texture}
+\item 
+sf\+::\+Sprite \hyperlink{class_actor___class_abbef9a0bb9fe8451b95ab7dca366b777}{player\+Image}
+\item 
+sf\+::\+Clock \hyperlink{class_actor___class_a681f9193b51429a1c2c213e7627f9185}{Playerclock}
+\item 
+sf\+::\+Int\+Rect \hyperlink{class_actor___class_a95743733b62918f4cca704b96275d95f}{rect\+Source\+Sprite}
+\item 
+int \hyperlink{class_actor___class_acab5d3dc2a8623644b54d446b093cc7f}{lvl} =0
+\item 
+int \hyperlink{class_actor___class_aeeeefb9c4a5ed7b67e380dbbd5249889}{actorid} =0
+\item 
+int \hyperlink{class_actor___class_ac1ceeec9b55fe7cb6c657b3cf1aa81dd}{height}
+\item 
+int \hyperlink{class_actor___class_ab409e2de6684381c116ba5f157cfb003}{width}
+\item 
+int \hyperlink{class_actor___class_a9ab84f0fcab1c04e088db17d41c9dbf8}{imortal} = 0
+\item 
+sf\+::\+Vector2f \hyperlink{class_actor___class_a9073df26beb7a0c9801fae3caa1b4743}{prevlocation}
+\item 
+int \hyperlink{class_actor___class_a6230b3e81995e83745eb532f883cf7d2}{falling} = 0
+\item 
+int \hyperlink{class_actor___class_a162d16a5e6b738af5a7d6d84b3d5e376}{standing\+\_\+still}
+\item 
+int \hyperlink{class_actor___class_a19615eb6b350b927e943c203f6d6ba6b}{dir}
+\item 
+int \hyperlink{class_actor___class_a843a4b6d14c54fff28e5956842d4988c}{direction} = 0
+\item 
+int \hyperlink{class_actor___class_a51e346bc448f9f533e3b8762d6c7ea39}{wallhit} =0
+\item 
+int \hyperlink{class_actor___class_ad964e0b5531233ed93d765343ec266bd}{action\+\_\+taken} = -\/1
+\item 
+bool \hyperlink{class_actor___class_ad4f76cc4e71f3c83b41654c538a241b3}{roof}
+\item 
+bool \hyperlink{class_actor___class_ae4069280f354c6ed5efd8a663c949338}{roofhit\+\_\+hero}
+\item 
+int \hyperlink{class_actor___class_adfbd9eb605a74c1a9d9da3df90a92aea}{health} = 1
+\item 
+int \hyperlink{class_actor___class_a183384213048a1b5a8b62ca1de090ae2}{immunity}
+\item 
+int \hyperlink{class_actor___class_ac71f1b0f8ee1403bc8ce8b5da823e2e6}{life\+State} = 1
+\item 
+int \hyperlink{class_actor___class_a4c38df985dea8585c3de3eea8eab6514}{floor} = 400
+\item 
+float \hyperlink{class_actor___class_a9da6be86a6bac1e8bd4ba051fbad7eee}{gravity} = 5
+\item 
+float \hyperlink{class_actor___class_af833d1fff0db17c4e797836ffbae9f9e}{speed} = 1
+\item 
+int \hyperlink{class_actor___class_adbd0ae08bc516686efb88230183168c7}{max\+Speed} = \hyperlink{class_actor___class_af833d1fff0db17c4e797836ffbae9f9e}{speed}$\ast$4
+\item 
+int \hyperlink{class_actor___class_ab3e44e44838da370bb07cfe647cbd2d3}{min\+Speed} = \hyperlink{class_actor___class_af833d1fff0db17c4e797836ffbae9f9e}{speed}
+\item 
+double \hyperlink{class_actor___class_a9788b5985fcd281bc5fe722937e7413c}{sprite\+Height} = 2.\+5
+\item 
+double \hyperlink{class_actor___class_a58010eaaca47d2e529d11f898fadebb9}{sprite\+Width} = 2.\+5
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file actor\+\_\+class.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_actor___class_ab8e23ffae108da3b8eda67c6753bdae0}{}\label{class_actor___class_ab8e23ffae108da3b8eda67c6753bdae0} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!action@{action}}
+\index{action@{action}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily void Actor\+\_\+\+Class\+::action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classboss__fight__3_adfe8a4ff5e97513348411aa89a91e68c}{boss\+\_\+fight\+\_\+3}, \hyperlink{classboss__enemy__2_a6315561045c1530e588014caaf6a9292}{boss\+\_\+enemy\+\_\+2}, \hyperlink{classturret___e_ae171d53d23f25be7b0e76360803b2cf4}{turret\+\_\+E}, \hyperlink{classboss__fight__1_a73c37c9ddf1b6370d1a9e2b5c9cd9b05}{boss\+\_\+fight\+\_\+1}, \hyperlink{classturret_a883048366044ccc7abd00a7f57400d2a}{turret}, \hyperlink{classturret__all_a448418831d26b665611848751d6294b6}{turret\+\_\+all}, \hyperlink{classturret___s_a34ce31ab5648dab8b5cfb7c94d96cf3a}{turret\+\_\+S}, \hyperlink{classturret___w_a7cc0215ea12db8e371f02e377a5556f9}{turret\+\_\+W}, and \hyperlink{classturret___n_a888cc034380c572a17a38e0f3c2fb9bd}{turret\+\_\+N}.
+
+
+
+Definition at line 10 of file actor\+\_\+class.\+cpp.
+
+\hypertarget{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{}\label{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!death@{death}}
+\index{death@{death}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void Actor\+\_\+\+Class\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_hero_a62d93b951b0b769c75ddbdf1615660a0}{Hero}, \hyperlink{classboss__fight__3_a48e73e4ae1484663a108df1f420b8d9e}{boss\+\_\+fight\+\_\+3}, \hyperlink{class_textbox_a830cca6316662b4c7a1ae1d2f844f9ae}{Textbox}, \hyperlink{classboss__enemy__2_a602bdac1d534a3d37e9cd76616216b45}{boss\+\_\+enemy\+\_\+2}, \hyperlink{classboss__fight__1_a158e53600a084e13047732d89a0f4299}{boss\+\_\+fight\+\_\+1}, \hyperlink{classhealth__item_a9835f457ffbd1a9e157eac9423ae1201}{health\+\_\+item}, \hyperlink{class_boss__door_acee93d541699ed109dfae8f05f0ea39e}{Boss\+\_\+door}, \hyperlink{classturret___e_a7a5f3abce3a117af243be16265f84c6c}{turret\+\_\+E}, \hyperlink{classturret_a51ac1a996e5139a03f331c382d136a95}{turret}, \hyperlink{classturret__all_ae43c3ac8bb96e81158de74944fe58010}{turret\+\_\+all}, \hyperlink{classturret___s_a14320bc891a632978c4808bcb385e4b1}{turret\+\_\+S}, \hyperlink{classturret___w_a5788baf907acfcb48fc92921f514053d}{turret\+\_\+W}, \hyperlink{class_enemy___goomba_a09cd52bddf5aa44b94d85adeefa46620}{Enemy\+\_\+\+Goomba}, \hyperlink{classturret___n_a8004a2fe2a3ab77b0da93ef0e26635ce}{turret\+\_\+N}, \hyperlink{classanimatonsprites_a50c1ab6bdeb5462156197f1208d8bde5}{animatonsprites}, \hyperlink{class_flying__enemy_a79631d3c3cf673c0651be53eac8ac330}{Flying\+\_\+enemy}, and \hyperlink{class_firewall_a506013f97478b8937becdac038c45c8e}{Firewall}.
+
+
+
+Definition at line 11 of file actor\+\_\+class.\+cpp.
+
+\hypertarget{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{}\label{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!draw@{draw}}
+\index{draw@{draw}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Actor\+\_\+\+Class\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_hero_abc9f2dece1e3757ba2b315a332f995c2}{Hero}, \hyperlink{classboss__fight__3_adcab7141b564704e89778a3303d529a7}{boss\+\_\+fight\+\_\+3}, \hyperlink{class_textbox_a164e6dfbd1964b36b05de0cf84d07abf}{Textbox}, \hyperlink{classboss__enemy__2_aea8e734cf65b63f1d8ba143f3b449f63}{boss\+\_\+enemy\+\_\+2}, \hyperlink{classhealth__item_aa9b9410c9e524d807327e682e11d1482}{health\+\_\+item}, \hyperlink{classboss__fight__1_a83b20e761e3f8781c8fee8d2be5442b0}{boss\+\_\+fight\+\_\+1}, \hyperlink{classturret___e_a55fc34335f9afb92a126da741a82f62a}{turret\+\_\+E}, \hyperlink{class_boss__door_a093ca3c013ae4f5f703675bc6d3de9f0}{Boss\+\_\+door}, \hyperlink{classturret_ae396c3a39ef7556070e1a0b55bea2970}{turret}, \hyperlink{classturret__all_ab13a06bdbc2244a7a4460ffc8671f2bd}{turret\+\_\+all}, \hyperlink{classturret___s_ad5699c9932a20914961dde81c5a96d86}{turret\+\_\+S}, \hyperlink{classturret___w_a9dce201a49a87d2a9e03c9efea6361e8}{turret\+\_\+W}, \hyperlink{class_enemy___goomba_a1947885e29f42889e42947462a9caeb3}{Enemy\+\_\+\+Goomba}, \hyperlink{classturret___n_a2f584be23fc5f0e44fbfda79bc3733b7}{turret\+\_\+N}, \hyperlink{classanimatonsprites_ac009e9d25649abc90551981421de9f72}{animatonsprites}, \hyperlink{class_flying__enemy_a2d8bc9f4c82ec045da7346bd3613bfcb}{Flying\+\_\+enemy}, and \hyperlink{class_firewall_a3e67e39efb0a425acd1f009f86e434ee}{Firewall}.
+
+
+
+Definition at line 7 of file actor\+\_\+class.\+cpp.
+
+\hypertarget{class_actor___class_a87d1e079d8576fa99592a60b38a04a1b}{}\label{class_actor___class_a87d1e079d8576fa99592a60b38a04a1b} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!interaction@{interaction}}
+\index{interaction@{interaction}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{interaction()}{interaction()}}
+{\footnotesize\ttfamily virtual void Actor\+\_\+\+Class\+::interaction (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$}]{actor\+\_\+array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_textbox_a67dd5640da6bbd88affded4a37ede098}{Textbox}, \hyperlink{classturret___e_a34cfbe8887180d443eca15fd71370964}{turret\+\_\+E}, \hyperlink{classturret_aa6733d8f9b2d5773271a1ed3b4b88aab}{turret}, \hyperlink{classturret__all_a6491dcec10ab94ccf35bb371d014e17f}{turret\+\_\+all}, \hyperlink{classturret___s_ae7e579ddf3982d6914491784595f1c16}{turret\+\_\+S}, \hyperlink{classturret___w_a3b071bffcc2d407b88d4eca47e4820e0}{turret\+\_\+W}, \hyperlink{classturret___n_a33cfa60542db12f35678ebc3d479491f}{turret\+\_\+N}, \hyperlink{class_boss__door_ab80f398f1c479f78c2b36409c311ccb5}{Boss\+\_\+door}, and \hyperlink{class_firewall_a21c3c46eaf7bb026b73a77b0288fa232}{Firewall}.
+
+
+
+Definition at line 54 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_af3488ca470eb77255060142fd167aa72}{}\label{class_actor___class_af3488ca470eb77255060142fd167aa72} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!interaction\+\_\+effect@{interaction\+\_\+effect}}
+\index{interaction\+\_\+effect@{interaction\+\_\+effect}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{interaction\+\_\+effect()}{interaction\_effect()}}
+{\footnotesize\ttfamily virtual void Actor\+\_\+\+Class\+::interaction\+\_\+effect (\begin{DoxyParamCaption}\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_boss__door_ab47df13fb29b88a5be09fb7062384a50}{Boss\+\_\+door}, \hyperlink{classhealth__item_a97005bdbe125d68fb6cd5561081674e2}{health\+\_\+item}, and \hyperlink{class_firewall_a035dac1c484fe153ca14710777c617cb}{Firewall}.
+
+
+
+Definition at line 55 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{}\label{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!jump@{jump}}
+\index{jump@{jump}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Actor\+\_\+\+Class\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_hero_a1bee38d9164cf1ecda512cc24e81b171}{Hero}, \hyperlink{classboss__fight__3_ab642323b24a5f139339fffba4749ebdc}{boss\+\_\+fight\+\_\+3}, \hyperlink{class_textbox_a995336eb1a269216afb4dcd187e39d0b}{Textbox}, \hyperlink{classboss__enemy__2_a7edccc066047aacf21797b6d4316f57c}{boss\+\_\+enemy\+\_\+2}, \hyperlink{classhealth__item_af7e8d841f469ac5e225429aaddb06844}{health\+\_\+item}, \hyperlink{classboss__fight__1_a363121fd16c5d41889f96405544bccc1}{boss\+\_\+fight\+\_\+1}, \hyperlink{classturret___e_a74827456c32525695ee09d5577c55fd4}{turret\+\_\+E}, \hyperlink{class_boss__door_ac2f0b88b5ca332380602f029f0f83e17}{Boss\+\_\+door}, \hyperlink{classturret_a6c97760cdfa379ce956c3f5d773c9f4e}{turret}, \hyperlink{classturret__all_ac746cd08cbf83804b585d0df70aa9472}{turret\+\_\+all}, \hyperlink{classturret___s_ab4ac035f439af50905a72227b19072a9}{turret\+\_\+S}, \hyperlink{classturret___w_af467ddd08bd7304716f5a336321b2ca5}{turret\+\_\+W}, \hyperlink{class_enemy___goomba_ab07621304a0b92c4559679071c060439}{Enemy\+\_\+\+Goomba}, \hyperlink{classturret___n_aec518dd6dacf05d1af45e6713a15ea5d}{turret\+\_\+N}, \hyperlink{classanimatonsprites_a45b6be4805c6e25497956b88c176f552}{animatonsprites}, \hyperlink{class_flying__enemy_af9f8bc6cf140ee0c4ce1f7e340ef79e5}{Flying\+\_\+enemy}, and \hyperlink{class_firewall_a6fd8ce6bf5731d822c0d47ee209dbe8d}{Firewall}.
+
+
+
+Definition at line 9 of file actor\+\_\+class.\+cpp.
+
+\hypertarget{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{}\label{class_actor___class_af1764a94c5410ba8476f56553cd2c327} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!move@{move}}
+\index{move@{move}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Actor\+\_\+\+Class\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_hero_a24e136aeddd49d1a7d0c068079fbab7e}{Hero}, \hyperlink{classboss__fight__3_ab70b9f8a73d4fd1fe807f09c76a2267a}{boss\+\_\+fight\+\_\+3}, \hyperlink{class_textbox_a4680a3e6bbaa33dc57a585c7e0072b0a}{Textbox}, \hyperlink{classboss__enemy__2_a8d81c7498b4a31d735bd4af21ce81d84}{boss\+\_\+enemy\+\_\+2}, \hyperlink{classhealth__item_a60ce7f7099abb26dcc159fdf115d63eb}{health\+\_\+item}, \hyperlink{classboss__fight__1_a2ecde11495757971f23f45e78f23c5f7}{boss\+\_\+fight\+\_\+1}, \hyperlink{classturret___e_a126e7a9b7731b83d5cdb3661807370bb}{turret\+\_\+E}, \hyperlink{class_boss__door_a27456c378555a03310cd4f25b167867c}{Boss\+\_\+door}, \hyperlink{classturret_a814fbc1d3c0ea9e10b9ec1edb3e5f734}{turret}, \hyperlink{classturret__all_a03416eb03334f4ee225c31cd18d25ba1}{turret\+\_\+all}, \hyperlink{classturret___s_a9ecfd60470958a3bcfbda2f4b751f8ab}{turret\+\_\+S}, \hyperlink{classturret___w_a3d06d812bd3f9905a2965372478f9ebd}{turret\+\_\+W}, \hyperlink{class_enemy___goomba_a0b72ff73bb4f64d4c659a5142862fd1f}{Enemy\+\_\+\+Goomba}, \hyperlink{classturret___n_ac8ad5be9e03657d090a45f6198812f35}{turret\+\_\+N}, \hyperlink{classanimatonsprites_a1cf7f2fb8b5a3299b05052c8b6328f01}{animatonsprites}, \hyperlink{class_flying__enemy_a0b55c3bf770b7f94fa6892cac47c80bd}{Flying\+\_\+enemy}, and \hyperlink{class_firewall_ac08bd22ea41caaa8ab269a9b1e0d36aa}{Firewall}.
+
+
+
+Definition at line 8 of file actor\+\_\+class.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_actor___class_ad964e0b5531233ed93d765343ec266bd}{}\label{class_actor___class_ad964e0b5531233ed93d765343ec266bd} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!action\+\_\+taken@{action\+\_\+taken}}
+\index{action\+\_\+taken@{action\+\_\+taken}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{action\+\_\+taken}{action\_taken}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::action\+\_\+taken = -\/1}
+
+
+
+Definition at line 34 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_aeeeefb9c4a5ed7b67e380dbbd5249889}{}\label{class_actor___class_aeeeefb9c4a5ed7b67e380dbbd5249889} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!actorid@{actorid}}
+\index{actorid@{actorid}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{actorid}{actorid}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::actorid =0}
+
+
+
+Definition at line 24 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a19615eb6b350b927e943c203f6d6ba6b}{}\label{class_actor___class_a19615eb6b350b927e943c203f6d6ba6b} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!dir@{dir}}
+\index{dir@{dir}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::dir}
+
+
+
+Definition at line 31 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a843a4b6d14c54fff28e5956842d4988c}{}\label{class_actor___class_a843a4b6d14c54fff28e5956842d4988c} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!direction@{direction}}
+\index{direction@{direction}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::direction = 0}
+
+
+
+Definition at line 32 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a6230b3e81995e83745eb532f883cf7d2}{}\label{class_actor___class_a6230b3e81995e83745eb532f883cf7d2} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!falling@{falling}}
+\index{falling@{falling}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{falling}{falling}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::falling = 0}
+
+
+
+Definition at line 29 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a4c38df985dea8585c3de3eea8eab6514}{}\label{class_actor___class_a4c38df985dea8585c3de3eea8eab6514} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!floor@{floor}}
+\index{floor@{floor}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{floor}{floor}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::floor = 400}
+
+
+
+Definition at line 40 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a9da6be86a6bac1e8bd4ba051fbad7eee}{}\label{class_actor___class_a9da6be86a6bac1e8bd4ba051fbad7eee} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!gravity@{gravity}}
+\index{gravity@{gravity}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{gravity}{gravity}}
+{\footnotesize\ttfamily float Actor\+\_\+\+Class\+::gravity = 5}
+
+
+
+Definition at line 41 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_adfbd9eb605a74c1a9d9da3df90a92aea}{}\label{class_actor___class_adfbd9eb605a74c1a9d9da3df90a92aea} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!health@{health}}
+\index{health@{health}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::health = 1}
+
+
+
+Definition at line 37 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_ac1ceeec9b55fe7cb6c657b3cf1aa81dd}{}\label{class_actor___class_ac1ceeec9b55fe7cb6c657b3cf1aa81dd} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!height@{height}}
+\index{height@{height}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::height}
+
+
+
+Definition at line 25 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a183384213048a1b5a8b62ca1de090ae2}{}\label{class_actor___class_a183384213048a1b5a8b62ca1de090ae2} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!immunity@{immunity}}
+\index{immunity@{immunity}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{immunity}{immunity}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::immunity}
+
+
+
+Definition at line 38 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a9ab84f0fcab1c04e088db17d41c9dbf8}{}\label{class_actor___class_a9ab84f0fcab1c04e088db17d41c9dbf8} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!imortal@{imortal}}
+\index{imortal@{imortal}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{imortal}{imortal}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::imortal = 0}
+
+
+
+Definition at line 27 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_ac71f1b0f8ee1403bc8ce8b5da823e2e6}{}\label{class_actor___class_ac71f1b0f8ee1403bc8ce8b5da823e2e6} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!life\+State@{life\+State}}
+\index{life\+State@{life\+State}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{life\+State}{lifeState}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::life\+State = 1}
+
+
+
+Definition at line 39 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_acab5d3dc2a8623644b54d446b093cc7f}{}\label{class_actor___class_acab5d3dc2a8623644b54d446b093cc7f} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!lvl@{lvl}}
+\index{lvl@{lvl}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{lvl}{lvl}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::lvl =0}
+
+
+
+Definition at line 23 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_adbd0ae08bc516686efb88230183168c7}{}\label{class_actor___class_adbd0ae08bc516686efb88230183168c7} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!max\+Speed@{max\+Speed}}
+\index{max\+Speed@{max\+Speed}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{max\+Speed}{maxSpeed}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::max\+Speed = \hyperlink{class_actor___class_af833d1fff0db17c4e797836ffbae9f9e}{speed}$\ast$4}
+
+
+
+Definition at line 43 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_ab3e44e44838da370bb07cfe647cbd2d3}{}\label{class_actor___class_ab3e44e44838da370bb07cfe647cbd2d3} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!min\+Speed@{min\+Speed}}
+\index{min\+Speed@{min\+Speed}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{min\+Speed}{minSpeed}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::min\+Speed = \hyperlink{class_actor___class_af833d1fff0db17c4e797836ffbae9f9e}{speed}}
+
+
+
+Definition at line 44 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a681f9193b51429a1c2c213e7627f9185}{}\label{class_actor___class_a681f9193b51429a1c2c213e7627f9185} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!Playerclock@{Playerclock}}
+\index{Playerclock@{Playerclock}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{Playerclock}{Playerclock}}
+{\footnotesize\ttfamily sf\+::\+Clock Actor\+\_\+\+Class\+::\+Playerclock}
+
+
+
+Definition at line 19 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_abbef9a0bb9fe8451b95ab7dca366b777}{}\label{class_actor___class_abbef9a0bb9fe8451b95ab7dca366b777} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!player\+Image@{player\+Image}}
+\index{player\+Image@{player\+Image}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{player\+Image}{playerImage}}
+{\footnotesize\ttfamily sf\+::\+Sprite Actor\+\_\+\+Class\+::player\+Image}
+
+
+
+Definition at line 18 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a9073df26beb7a0c9801fae3caa1b4743}{}\label{class_actor___class_a9073df26beb7a0c9801fae3caa1b4743} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!prevlocation@{prevlocation}}
+\index{prevlocation@{prevlocation}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{prevlocation}{prevlocation}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Actor\+\_\+\+Class\+::prevlocation}
+
+
+
+Definition at line 28 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a95743733b62918f4cca704b96275d95f}{}\label{class_actor___class_a95743733b62918f4cca704b96275d95f} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!rect\+Source\+Sprite@{rect\+Source\+Sprite}}
+\index{rect\+Source\+Sprite@{rect\+Source\+Sprite}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{rect\+Source\+Sprite}{rectSourceSprite}}
+{\footnotesize\ttfamily sf\+::\+Int\+Rect Actor\+\_\+\+Class\+::rect\+Source\+Sprite}
+
+
+
+Definition at line 21 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_ad4f76cc4e71f3c83b41654c538a241b3}{}\label{class_actor___class_ad4f76cc4e71f3c83b41654c538a241b3} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!roof@{roof}}
+\index{roof@{roof}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{roof}{roof}}
+{\footnotesize\ttfamily bool Actor\+\_\+\+Class\+::roof}
+
+
+
+Definition at line 35 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_ae4069280f354c6ed5efd8a663c949338}{}\label{class_actor___class_ae4069280f354c6ed5efd8a663c949338} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!roofhit\+\_\+hero@{roofhit\+\_\+hero}}
+\index{roofhit\+\_\+hero@{roofhit\+\_\+hero}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{roofhit\+\_\+hero}{roofhit\_hero}}
+{\footnotesize\ttfamily bool Actor\+\_\+\+Class\+::roofhit\+\_\+hero}
+
+
+
+Definition at line 36 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_af833d1fff0db17c4e797836ffbae9f9e}{}\label{class_actor___class_af833d1fff0db17c4e797836ffbae9f9e} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!speed@{speed}}
+\index{speed@{speed}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Actor\+\_\+\+Class\+::speed = 1}
+
+
+
+Definition at line 42 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a9788b5985fcd281bc5fe722937e7413c}{}\label{class_actor___class_a9788b5985fcd281bc5fe722937e7413c} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!sprite\+Height@{sprite\+Height}}
+\index{sprite\+Height@{sprite\+Height}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{sprite\+Height}{spriteHeight}}
+{\footnotesize\ttfamily double Actor\+\_\+\+Class\+::sprite\+Height = 2.\+5}
+
+
+
+Definition at line 45 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a28e08b1eea7303fb8afbde256cddc081}{}\label{class_actor___class_a28e08b1eea7303fb8afbde256cddc081} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!sprite\+Texture@{sprite\+Texture}}
+\index{sprite\+Texture@{sprite\+Texture}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{sprite\+Texture}{spriteTexture}}
+{\footnotesize\ttfamily sf\+::\+Texture Actor\+\_\+\+Class\+::sprite\+Texture}
+
+
+
+Definition at line 16 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a58010eaaca47d2e529d11f898fadebb9}{}\label{class_actor___class_a58010eaaca47d2e529d11f898fadebb9} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!sprite\+Width@{sprite\+Width}}
+\index{sprite\+Width@{sprite\+Width}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{sprite\+Width}{spriteWidth}}
+{\footnotesize\ttfamily double Actor\+\_\+\+Class\+::sprite\+Width = 2.\+5}
+
+
+
+Definition at line 46 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a162d16a5e6b738af5a7d6d84b3d5e376}{}\label{class_actor___class_a162d16a5e6b738af5a7d6d84b3d5e376} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!standing\+\_\+still@{standing\+\_\+still}}
+\index{standing\+\_\+still@{standing\+\_\+still}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{standing\+\_\+still}{standing\_still}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::standing\+\_\+still}
+
+
+
+Definition at line 30 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_ac01a0438aa7e21d9c6ef4110546b1d72}{}\label{class_actor___class_ac01a0438aa7e21d9c6ef4110546b1d72} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!texture@{texture}}
+\index{texture@{texture}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture Actor\+\_\+\+Class\+::texture}
+
+
+
+Definition at line 17 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_a51e346bc448f9f533e3b8762d6c7ea39}{}\label{class_actor___class_a51e346bc448f9f533e3b8762d6c7ea39} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!wallhit@{wallhit}}
+\index{wallhit@{wallhit}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{wallhit}{wallhit}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::wallhit =0}
+
+
+
+Definition at line 33 of file actor\+\_\+class.\+h.
+
+\hypertarget{class_actor___class_ab409e2de6684381c116ba5f157cfb003}{}\label{class_actor___class_ab409e2de6684381c116ba5f157cfb003} 
+\index{Actor\+\_\+\+Class@{Actor\+\_\+\+Class}!width@{width}}
+\index{width@{width}!Actor\+\_\+\+Class@{Actor\+\_\+\+Class}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Actor\+\_\+\+Class\+::width}
+
+
+
+Definition at line 26 of file actor\+\_\+class.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/\hyperlink{actor__class_8h}{actor\+\_\+class.\+h}\item 
+Actor/\hyperlink{actor__class_8cpp}{actor\+\_\+class.\+cpp}\end{DoxyCompactItemize}

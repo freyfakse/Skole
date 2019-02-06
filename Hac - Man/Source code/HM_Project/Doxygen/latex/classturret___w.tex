@@ -1,0 +1,249 @@
+\hypertarget{classturret___w}{}\section{turret\+\_\+W Class Reference}
+\label{classturret___w}\index{turret\+\_\+W@{turret\+\_\+W}}
+
+
+{\ttfamily \#include $<$turret\+\_\+\+W.\+h$>$}
+
+Inheritance diagram for turret\+\_\+W\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classturret___w}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classturret___w_a9906ad4c139427379b42cff8b84eefa4}{turret\+\_\+W} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{classturret___w_a3d954941ca61aa3c1e43efa4314c1f29}{col}, int x\+Inn, int y\+Inn)
+\item 
+void \hyperlink{classturret___w_af467ddd08bd7304716f5a336321b2ca5}{jump} ()
+\item 
+void \hyperlink{classturret___w_a3d06d812bd3f9905a2965372478f9ebd}{move} ()
+\item 
+void \hyperlink{classturret___w_a9dce201a49a87d2a9e03c9efea6361e8}{draw} ()
+\item 
+void \hyperlink{classturret___w_a5788baf907acfcb48fc92921f514053d}{death} ()
+\item 
+void \hyperlink{classturret___w_a7cc0215ea12db8e371f02e377a5556f9}{action} ()
+\item 
+void \hyperlink{classturret___w_a3b071bffcc2d407b88d4eca47e4820e0}{interaction} (std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$ actor\+\_\+array)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{classturret___w_a2537f62195a8cb57eac8d0c7b93062d3}{turretsW}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{classturret___w_a5f2bc12dc323bcdb13db6df48a64e61f}{vindu}
+\item 
+\hyperlink{classanimatonsprites}{animatonsprites} \hyperlink{classturret___w_aa5e92e624406182b1b93ad3c35bf5da5}{animation}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{classturret___w_a3d954941ca61aa3c1e43efa4314c1f29}{col}
+\item 
+float \hyperlink{classturret___w_ad524e24b02c9c34ee778265f99264a1f}{gravity} = 5
+\item 
+int \hyperlink{classturret___w_a51e29c8244f2e6a2b08106acf2e55332}{boss\+\_\+shoot} = 5
+\item 
+int \hyperlink{classturret___w_a9ae3df02b0fa517233e30ca31b8f59c6}{startX} =400
+\begin{DoxyCompactList}\small\item\em float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title \end{DoxyCompactList}\item 
+int \hyperlink{classturret___w_adb9f5689156e17451806b3b3390a7d20}{startY} =20
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file turret\+\_\+\+W.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classturret___w_a9906ad4c139427379b42cff8b84eefa4}{}\label{classturret___w_a9906ad4c139427379b42cff8b84eefa4} 
+\index{turret\+\_\+W@{turret\+\_\+W}!turret\+\_\+W@{turret\+\_\+W}}
+\index{turret\+\_\+W@{turret\+\_\+W}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{turret\+\_\+\+W()}{turret\_W()}}
+{\footnotesize\ttfamily turret\+\_\+\+W\+::turret\+\_\+W (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file turret\+\_\+\+W.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classturret___w_a7cc0215ea12db8e371f02e377a5556f9}{}\label{classturret___w_a7cc0215ea12db8e371f02e377a5556f9} 
+\index{turret\+\_\+W@{turret\+\_\+W}!action@{action}}
+\index{action@{action}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily void turret\+\_\+\+W\+::action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab8e23ffae108da3b8eda67c6753bdae0}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 39 of file turret\+\_\+\+W.\+h.
+
+\hypertarget{classturret___w_a5788baf907acfcb48fc92921f514053d}{}\label{classturret___w_a5788baf907acfcb48fc92921f514053d} 
+\index{turret\+\_\+W@{turret\+\_\+W}!death@{death}}
+\index{death@{death}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void turret\+\_\+\+W\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 43 of file turret\+\_\+\+W.\+cpp.
+
+\hypertarget{classturret___w_a9dce201a49a87d2a9e03c9efea6361e8}{}\label{classturret___w_a9dce201a49a87d2a9e03c9efea6361e8} 
+\index{turret\+\_\+W@{turret\+\_\+W}!draw@{draw}}
+\index{draw@{draw}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void turret\+\_\+\+W\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 33 of file turret\+\_\+\+W.\+cpp.
+
+\hypertarget{classturret___w_a3b071bffcc2d407b88d4eca47e4820e0}{}\label{classturret___w_a3b071bffcc2d407b88d4eca47e4820e0} 
+\index{turret\+\_\+W@{turret\+\_\+W}!interaction@{interaction}}
+\index{interaction@{interaction}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{interaction()}{interaction()}}
+{\footnotesize\ttfamily void turret\+\_\+\+W\+::interaction (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$}]{actor\+\_\+array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a87d1e079d8576fa99592a60b38a04a1b}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 45 of file turret\+\_\+\+W.\+cpp.
+
+\hypertarget{classturret___w_af467ddd08bd7304716f5a336321b2ca5}{}\label{classturret___w_af467ddd08bd7304716f5a336321b2ca5} 
+\index{turret\+\_\+W@{turret\+\_\+W}!jump@{jump}}
+\index{jump@{jump}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void turret\+\_\+\+W\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 41 of file turret\+\_\+\+W.\+cpp.
+
+\hypertarget{classturret___w_a3d06d812bd3f9905a2965372478f9ebd}{}\label{classturret___w_a3d06d812bd3f9905a2965372478f9ebd} 
+\index{turret\+\_\+W@{turret\+\_\+W}!move@{move}}
+\index{move@{move}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void turret\+\_\+\+W\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 31 of file turret\+\_\+\+W.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classturret___w_aa5e92e624406182b1b93ad3c35bf5da5}{}\label{classturret___w_aa5e92e624406182b1b93ad3c35bf5da5} 
+\index{turret\+\_\+W@{turret\+\_\+W}!animation@{animation}}
+\index{animation@{animation}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily \hyperlink{classanimatonsprites}{animatonsprites} turret\+\_\+\+W\+::animation}
+
+
+
+Definition at line 21 of file turret\+\_\+\+W.\+h.
+
+\hypertarget{classturret___w_a51e29c8244f2e6a2b08106acf2e55332}{}\label{classturret___w_a51e29c8244f2e6a2b08106acf2e55332} 
+\index{turret\+\_\+W@{turret\+\_\+W}!boss\+\_\+shoot@{boss\+\_\+shoot}}
+\index{boss\+\_\+shoot@{boss\+\_\+shoot}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{boss\+\_\+shoot}{boss\_shoot}}
+{\footnotesize\ttfamily int turret\+\_\+\+W\+::boss\+\_\+shoot = 5}
+
+
+
+Definition at line 26 of file turret\+\_\+\+W.\+h.
+
+\hypertarget{classturret___w_a3d954941ca61aa3c1e43efa4314c1f29}{}\label{classturret___w_a3d954941ca61aa3c1e43efa4314c1f29} 
+\index{turret\+\_\+W@{turret\+\_\+W}!col@{col}}
+\index{col@{col}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} turret\+\_\+\+W\+::col}
+
+
+
+Definition at line 22 of file turret\+\_\+\+W.\+h.
+
+\hypertarget{classturret___w_ad524e24b02c9c34ee778265f99264a1f}{}\label{classturret___w_ad524e24b02c9c34ee778265f99264a1f} 
+\index{turret\+\_\+W@{turret\+\_\+W}!gravity@{gravity}}
+\index{gravity@{gravity}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{gravity}{gravity}}
+{\footnotesize\ttfamily float turret\+\_\+\+W\+::gravity = 5}
+
+
+
+Definition at line 24 of file turret\+\_\+\+W.\+h.
+
+\hypertarget{classturret___w_a9ae3df02b0fa517233e30ca31b8f59c6}{}\label{classturret___w_a9ae3df02b0fa517233e30ca31b8f59c6} 
+\index{turret\+\_\+W@{turret\+\_\+W}!startX@{startX}}
+\index{startX@{startX}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily int turret\+\_\+\+W\+::startX =400}
+
+
+
+float floor =400;//bør byttes ut med at det er localisasjonen den intersecter med en title 
+
+
+
+Definition at line 32 of file turret\+\_\+\+W.\+h.
+
+\hypertarget{classturret___w_adb9f5689156e17451806b3b3390a7d20}{}\label{classturret___w_adb9f5689156e17451806b3b3390a7d20} 
+\index{turret\+\_\+W@{turret\+\_\+W}!startY@{startY}}
+\index{startY@{startY}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{startY}{startY}}
+{\footnotesize\ttfamily int turret\+\_\+\+W\+::startY =20}
+
+
+
+Definition at line 33 of file turret\+\_\+\+W.\+h.
+
+\hypertarget{classturret___w_a2537f62195a8cb57eac8d0c7b93062d3}{}\label{classturret___w_a2537f62195a8cb57eac8d0c7b93062d3} 
+\index{turret\+\_\+W@{turret\+\_\+W}!turretsW@{turretsW}}
+\index{turretsW@{turretsW}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{turretsW}{turretsW}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape turret\+\_\+\+W\+::turretsW}
+
+
+
+Definition at line 18 of file turret\+\_\+\+W.\+h.
+
+\hypertarget{classturret___w_a5f2bc12dc323bcdb13db6df48a64e61f}{}\label{classturret___w_a5f2bc12dc323bcdb13db6df48a64e61f} 
+\index{turret\+\_\+W@{turret\+\_\+W}!vindu@{vindu}}
+\index{vindu@{vindu}!turret\+\_\+W@{turret\+\_\+W}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& turret\+\_\+\+W\+::vindu}
+
+
+
+Definition at line 20 of file turret\+\_\+\+W.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/enemy/\hyperlink{turret___w_8h}{turret\+\_\+\+W.\+h}\item 
+Actor/enemy/\hyperlink{turret___w_8cpp}{turret\+\_\+\+W.\+cpp}\end{DoxyCompactItemize}

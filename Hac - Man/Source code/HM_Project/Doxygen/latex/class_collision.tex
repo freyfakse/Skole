@@ -1,0 +1,293 @@
+\hypertarget{class_collision}{}\section{Collision Class Reference}
+\label{class_collision}\index{Collision@{Collision}}
+
+
+{\ttfamily \#include $<$collision.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_collision_afb1cd1c725a04748829d2c1d813c2eec}{Collision} (\hyperlink{class_config}{Config} conf\+Inn)
+\item 
+void \hyperlink{class_collision_aee423e34a3e0afa46842928df3c39d54}{collision\+Detection} (std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$ arry)
+\item 
+bool \hyperlink{class_collision_ae7096111cf5b03b99fa74a8e424d3ff1}{intersect} (float x, float x2, float y, float y2, int height, int height2, int length, int length2, \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$actor\+\_\+a, \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$actor\+\_\+b, bool tile)
+\item 
+void \hyperlink{class_collision_a6705beb3ad1e1d3e2e882ca21af5a46f}{projectile\+\_\+hit} (std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$ actor\+\_\+array)
+\item 
+void \hyperlink{class_collision_afaaa2d44fbd17da3d3569133c04a9789}{import\+\_\+projectiles} (std\+::vector$<$ \hyperlink{class_projectile}{Projectile} $\ast$$>$ imported\+\_\+projectile\+\_\+array)
+\item 
+void \hyperlink{class_collision_aa5f6f529a4c59de675958a9bdf26b963}{import\+\_\+map} (std\+::vector$<$ \hyperlink{class_super___tile}{Super\+\_\+\+Tile} $\ast$$>$ imported\+\_\+tile\+\_\+array, std\+::vector$<$ \hyperlink{class_action___tile}{Action\+\_\+\+Tile} $\ast$$>$imported\+\_\+actiontile\+\_\+array, std\+::vector$<$ \hyperlink{class_spawn___tile}{Spawn\+\_\+\+Tile} $\ast$$>$ imported\+\_\+spawn\+\_\+array)
+\item 
+bool \hyperlink{class_collision_a31573f99490d4a5940ed2a1fc796289d}{tile\+Collision} (\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$actor)
+\item 
+int \hyperlink{class_collision_ae9a5eceff1beb6584cafe16d10d59396}{spawn\+Tester} (int kamera\+Loc, int kameray)
+\item 
+void \hyperlink{class_collision_ad09862825e2bec3369c53dbbca1ed7fb}{actiontile\+Collision} (\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$actor)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_config}{Config} \hyperlink{class_collision_a1c9e4741260ced02eab1c9d49dc20aac}{conf}
+\item 
+\hyperlink{class_sound}{Sound} \hyperlink{class_collision_a9b9063978438db5e9502be4607986ebe}{sound}
+\item 
+\hyperlink{classinteracting}{interacting} \hyperlink{class_collision_a6ff0e49847948afeb0be0a1e5ded45c9}{interacting}
+\item 
+std\+::vector$<$ \hyperlink{class_projectile}{Projectile} $\ast$ $>$ \hyperlink{class_collision_a3828188ff3bdc4f1f4b5dbfc018552a8}{projectile\+\_\+array}
+\item 
+std\+::vector$<$ \hyperlink{class_super___tile}{Super\+\_\+\+Tile} $\ast$ $>$ \hyperlink{class_collision_aeccb982593f8dd6bb4c1d43198eb83d2}{tile\+\_\+array}
+\item 
+std\+::vector$<$ \hyperlink{class_action___tile}{Action\+\_\+\+Tile} $\ast$ $>$ \hyperlink{class_collision_a4faba0ed139ab4f637fe57b7d654ae65}{actiontile\+\_\+array}
+\item 
+std\+::vector$<$ \hyperlink{class_spawn___tile}{Spawn\+\_\+\+Tile} $\ast$ $>$ \hyperlink{class_collision_a5e65730ac3bebe98253379ed7aab0ec5}{spawn\+\_\+array}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_collision_aefd970d4b59cfd5ca8fd5d3675532f23}{temp\+\_\+bool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file collision.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_collision_afb1cd1c725a04748829d2c1d813c2eec}{}\label{class_collision_afb1cd1c725a04748829d2c1d813c2eec} 
+\index{Collision@{Collision}!Collision@{Collision}}
+\index{Collision@{Collision}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily Collision\+::\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{class_config}{Config}}]{conf\+Inn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 29 of file collision.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_collision_ad09862825e2bec3369c53dbbca1ed7fb}{}\label{class_collision_ad09862825e2bec3369c53dbbca1ed7fb} 
+\index{Collision@{Collision}!actiontile\+Collision@{actiontile\+Collision}}
+\index{actiontile\+Collision@{actiontile\+Collision}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{actiontile\+Collision()}{actiontileCollision()}}
+{\footnotesize\ttfamily void Collision\+::actiontile\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{actor }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file collision.\+cpp.
+
+\hypertarget{class_collision_aee423e34a3e0afa46842928df3c39d54}{}\label{class_collision_aee423e34a3e0afa46842928df3c39d54} 
+\index{Collision@{Collision}!collision\+Detection@{collision\+Detection}}
+\index{collision\+Detection@{collision\+Detection}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{collision\+Detection()}{collisionDetection()}}
+{\footnotesize\ttfamily void Collision\+::collision\+Detection (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$}]{arry }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file collision.\+cpp.
+
+\hypertarget{class_collision_aa5f6f529a4c59de675958a9bdf26b963}{}\label{class_collision_aa5f6f529a4c59de675958a9bdf26b963} 
+\index{Collision@{Collision}!import\+\_\+map@{import\+\_\+map}}
+\index{import\+\_\+map@{import\+\_\+map}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{import\+\_\+map()}{import\_map()}}
+{\footnotesize\ttfamily void Collision\+::import\+\_\+map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_super___tile}{Super\+\_\+\+Tile} $\ast$$>$}]{imported\+\_\+tile\+\_\+array,  }\item[{std\+::vector$<$ \hyperlink{class_action___tile}{Action\+\_\+\+Tile} $\ast$$>$}]{imported\+\_\+actiontile\+\_\+array,  }\item[{std\+::vector$<$ \hyperlink{class_spawn___tile}{Spawn\+\_\+\+Tile} $\ast$$>$}]{imported\+\_\+spawn\+\_\+array }\end{DoxyParamCaption})}
+
+this function imports tiles to collision\+Detectio 
+\begin{DoxyParams}{Parameters}
+{\em imported\+\_\+tile\+\_\+array} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file collision.\+cpp.
+
+\hypertarget{class_collision_afaaa2d44fbd17da3d3569133c04a9789}{}\label{class_collision_afaaa2d44fbd17da3d3569133c04a9789} 
+\index{Collision@{Collision}!import\+\_\+projectiles@{import\+\_\+projectiles}}
+\index{import\+\_\+projectiles@{import\+\_\+projectiles}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{import\+\_\+projectiles()}{import\_projectiles()}}
+{\footnotesize\ttfamily void Collision\+::import\+\_\+projectiles (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_projectile}{Projectile} $\ast$$>$}]{imported\+\_\+projectile\+\_\+array }\end{DoxyParamCaption})}
+
+this function imports the array that holds all the projectils to collision\+Detection 
+\begin{DoxyParams}{Parameters}
+{\em imported\+\_\+projectile\+\_\+array} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file collision.\+cpp.
+
+\hypertarget{class_collision_ae7096111cf5b03b99fa74a8e424d3ff1}{}\label{class_collision_ae7096111cf5b03b99fa74a8e424d3ff1} 
+\index{Collision@{Collision}!intersect@{intersect}}
+\index{intersect@{intersect}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily bool Collision\+::intersect (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{x2,  }\item[{float}]{y,  }\item[{float}]{y2,  }\item[{int}]{height,  }\item[{int}]{height2,  }\item[{int}]{length,  }\item[{int}]{length2,  }\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{actor\+\_\+a,  }\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{actor\+\_\+b,  }\item[{bool}]{tile }\end{DoxyParamCaption})}
+
+This function test if 2 objects whith x,y,height,length colide 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em x2} & \\
+\hline
+{\em y} & \\
+\hline
+{\em y2} & \\
+\hline
+{\em height} & \\
+\hline
+{\em height2} & \\
+\hline
+{\em length} & \\
+\hline
+{\em length2} & \\
+\hline
+{\em actor\+\_\+a} & \\
+\hline
+{\em actor\+\_\+b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 119 of file collision.\+cpp.
+
+\hypertarget{class_collision_a6705beb3ad1e1d3e2e882ca21af5a46f}{}\label{class_collision_a6705beb3ad1e1d3e2e882ca21af5a46f} 
+\index{Collision@{Collision}!projectile\+\_\+hit@{projectile\+\_\+hit}}
+\index{projectile\+\_\+hit@{projectile\+\_\+hit}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{projectile\+\_\+hit()}{projectile\_hit()}}
+{\footnotesize\ttfamily void Collision\+::projectile\+\_\+hit (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$$>$}]{actor\+\_\+array }\end{DoxyParamCaption})}
+
+this function checks if a projectile hits a actor 
+\begin{DoxyParams}{Parameters}
+{\em actor\+\_\+array} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file collision.\+cpp.
+
+\hypertarget{class_collision_ae9a5eceff1beb6584cafe16d10d59396}{}\label{class_collision_ae9a5eceff1beb6584cafe16d10d59396} 
+\index{Collision@{Collision}!spawn\+Tester@{spawn\+Tester}}
+\index{spawn\+Tester@{spawn\+Tester}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{spawn\+Tester()}{spawnTester()}}
+{\footnotesize\ttfamily int Collision\+::spawn\+Tester (\begin{DoxyParamCaption}\item[{int}]{kamera\+Loc,  }\item[{int}]{kameray }\end{DoxyParamCaption})}
+
+
+
+Definition at line 135 of file collision.\+cpp.
+
+\hypertarget{class_collision_a31573f99490d4a5940ed2a1fc796289d}{}\label{class_collision_a31573f99490d4a5940ed2a1fc796289d} 
+\index{Collision@{Collision}!tile\+Collision@{tile\+Collision}}
+\index{tile\+Collision@{tile\+Collision}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{tile\+Collision()}{tileCollision()}}
+{\footnotesize\ttfamily bool Collision\+::tile\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{class_actor___class}{Actor\+\_\+\+Class} $\ast$}]{actor }\end{DoxyParamCaption})}
+
+this function checks if an actor colides with the tiles 
+\begin{DoxyParams}{Parameters}
+{\em actor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 9 of file collision.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_collision_a4faba0ed139ab4f637fe57b7d654ae65}{}\label{class_collision_a4faba0ed139ab4f637fe57b7d654ae65} 
+\index{Collision@{Collision}!actiontile\+\_\+array@{actiontile\+\_\+array}}
+\index{actiontile\+\_\+array@{actiontile\+\_\+array}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{actiontile\+\_\+array}{actiontile\_array}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_action___tile}{Action\+\_\+\+Tile}$\ast$$>$ Collision\+::actiontile\+\_\+array}
+
+
+
+Definition at line 67 of file collision.\+h.
+
+\hypertarget{class_collision_a1c9e4741260ced02eab1c9d49dc20aac}{}\label{class_collision_a1c9e4741260ced02eab1c9d49dc20aac} 
+\index{Collision@{Collision}!conf@{conf}}
+\index{conf@{conf}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{conf}{conf}}
+{\footnotesize\ttfamily \hyperlink{class_config}{Config} Collision\+::conf}
+
+
+
+Definition at line 24 of file collision.\+h.
+
+\hypertarget{class_collision_a6ff0e49847948afeb0be0a1e5ded45c9}{}\label{class_collision_a6ff0e49847948afeb0be0a1e5ded45c9} 
+\index{Collision@{Collision}!interacting@{interacting}}
+\index{interacting@{interacting}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{interacting}{interacting}}
+{\footnotesize\ttfamily \hyperlink{classinteracting}{interacting} Collision\+::interacting}
+
+
+
+Definition at line 62 of file collision.\+h.
+
+\hypertarget{class_collision_a3828188ff3bdc4f1f4b5dbfc018552a8}{}\label{class_collision_a3828188ff3bdc4f1f4b5dbfc018552a8} 
+\index{Collision@{Collision}!projectile\+\_\+array@{projectile\+\_\+array}}
+\index{projectile\+\_\+array@{projectile\+\_\+array}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{projectile\+\_\+array}{projectile\_array}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_projectile}{Projectile}$\ast$$>$ Collision\+::projectile\+\_\+array}
+
+
+
+Definition at line 65 of file collision.\+h.
+
+\hypertarget{class_collision_a9b9063978438db5e9502be4607986ebe}{}\label{class_collision_a9b9063978438db5e9502be4607986ebe} 
+\index{Collision@{Collision}!sound@{sound}}
+\index{sound@{sound}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily \hyperlink{class_sound}{Sound} Collision\+::sound}
+
+
+
+Definition at line 25 of file collision.\+h.
+
+\hypertarget{class_collision_a5e65730ac3bebe98253379ed7aab0ec5}{}\label{class_collision_a5e65730ac3bebe98253379ed7aab0ec5} 
+\index{Collision@{Collision}!spawn\+\_\+array@{spawn\+\_\+array}}
+\index{spawn\+\_\+array@{spawn\+\_\+array}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{spawn\+\_\+array}{spawn\_array}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_spawn___tile}{Spawn\+\_\+\+Tile}$\ast$$>$ Collision\+::spawn\+\_\+array}
+
+
+
+Definition at line 68 of file collision.\+h.
+
+\hypertarget{class_collision_aefd970d4b59cfd5ca8fd5d3675532f23}{}\label{class_collision_aefd970d4b59cfd5ca8fd5d3675532f23} 
+\index{Collision@{Collision}!temp\+\_\+bool@{temp\+\_\+bool}}
+\index{temp\+\_\+bool@{temp\+\_\+bool}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{temp\+\_\+bool}{temp\_bool}}
+{\footnotesize\ttfamily bool Collision\+::temp\+\_\+bool\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 22 of file collision.\+h.
+
+\hypertarget{class_collision_aeccb982593f8dd6bb4c1d43198eb83d2}{}\label{class_collision_aeccb982593f8dd6bb4c1d43198eb83d2} 
+\index{Collision@{Collision}!tile\+\_\+array@{tile\+\_\+array}}
+\index{tile\+\_\+array@{tile\+\_\+array}!Collision@{Collision}}
+\subsubsection{\texorpdfstring{tile\+\_\+array}{tile\_array}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_super___tile}{Super\+\_\+\+Tile}$\ast$$>$ Collision\+::tile\+\_\+array}
+
+
+
+Definition at line 66 of file collision.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Fysik/\hyperlink{collision_8h}{collision.\+h}\item 
+Fysik/\hyperlink{collision_8cpp}{collision.\+cpp}\end{DoxyCompactItemize}

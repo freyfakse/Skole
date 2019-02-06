@@ -1,0 +1,165 @@
+\hypertarget{class_flying__enemy}{}\section{Flying\+\_\+enemy Class Reference}
+\label{class_flying__enemy}\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+
+
+{\ttfamily \#include $<$Flying\+\_\+enemy.\+h$>$}
+
+Inheritance diagram for Flying\+\_\+enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_flying__enemy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_flying__enemy_a2421fcde96321136c07dff8ad05f459b}{Flying\+\_\+enemy} (sf\+::\+Render\+Window \&window, \hyperlink{class_collision}{Collision} \hyperlink{class_flying__enemy_a4fc05425448f4272839d9765f5f9e859}{col}, int x\+Inn, int y\+Inn, \hyperlink{class_config}{Config} \&conf)
+\item 
+void \hyperlink{class_flying__enemy_a0b55c3bf770b7f94fa6892cac47c80bd}{move} ()
+\item 
+void \hyperlink{class_flying__enemy_af9f8bc6cf140ee0c4ce1f7e340ef79e5}{jump} ()
+\item 
+void \hyperlink{class_flying__enemy_a2d8bc9f4c82ec045da7346bd3613bfcb}{draw} ()
+\item 
+void \hyperlink{class_flying__enemy_a79631d3c3cf673c0651be53eac8ac330}{death} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Music \hyperlink{class_flying__enemy_a4b51b8962f740ad0357420758e19d9c9}{sound}
+\item 
+sf\+::\+Rectangle\+Shape \hyperlink{class_flying__enemy_a4c36026231ab03d14c8b3429c026c2ad}{corrupt\+\_\+file}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_flying__enemy_a27b52e8aef1f1164bf61e8ef0d16428c}{vindu}
+\item 
+\hyperlink{class_collision}{Collision} \hyperlink{class_flying__enemy_a4fc05425448f4272839d9765f5f9e859}{col}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Flying\+\_\+enemy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_flying__enemy_a2421fcde96321136c07dff8ad05f459b}{}\label{class_flying__enemy_a2421fcde96321136c07dff8ad05f459b} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{Flying\+\_\+enemy()}{Flying\_enemy()}}
+{\footnotesize\ttfamily Flying\+\_\+enemy\+::\+Flying\+\_\+enemy (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\hyperlink{class_collision}{Collision}}]{col,  }\item[{int}]{x\+Inn,  }\item[{int}]{y\+Inn,  }\item[{\hyperlink{class_config}{Config} \&}]{conf }\end{DoxyParamCaption})}
+
+ensures that the hero texture has been loaded 
+
+Definition at line 7 of file Flying\+\_\+enemy.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_flying__enemy_a79631d3c3cf673c0651be53eac8ac330}{}\label{class_flying__enemy_a79631d3c3cf673c0651be53eac8ac330} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!death@{death}}
+\index{death@{death}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{death()}{death()}}
+{\footnotesize\ttfamily void Flying\+\_\+enemy\+::death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_a9447c6154a674d7e6bdf24ff2874b7a8}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 92 of file Flying\+\_\+enemy.\+cpp.
+
+\hypertarget{class_flying__enemy_a2d8bc9f4c82ec045da7346bd3613bfcb}{}\label{class_flying__enemy_a2d8bc9f4c82ec045da7346bd3613bfcb} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!draw@{draw}}
+\index{draw@{draw}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Flying\+\_\+enemy\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ac49cd62be76b4b950ecbe155413f1b64}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 103 of file Flying\+\_\+enemy.\+cpp.
+
+\hypertarget{class_flying__enemy_af9f8bc6cf140ee0c4ce1f7e340ef79e5}{}\label{class_flying__enemy_af9f8bc6cf140ee0c4ce1f7e340ef79e5} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!jump@{jump}}
+\index{jump@{jump}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Flying\+\_\+enemy\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_ab33216a3ce0c856bdc16231c71ae35c2}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 108 of file Flying\+\_\+enemy.\+cpp.
+
+\hypertarget{class_flying__enemy_a0b55c3bf770b7f94fa6892cac47c80bd}{}\label{class_flying__enemy_a0b55c3bf770b7f94fa6892cac47c80bd} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!move@{move}}
+\index{move@{move}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Flying\+\_\+enemy\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_actor___class_af1764a94c5410ba8476f56553cd2c327}{Actor\+\_\+\+Class}.
+
+
+
+Definition at line 51 of file Flying\+\_\+enemy.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_flying__enemy_a4fc05425448f4272839d9765f5f9e859}{}\label{class_flying__enemy_a4fc05425448f4272839d9765f5f9e859} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!col@{col}}
+\index{col@{col}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \hyperlink{class_collision}{Collision} Flying\+\_\+enemy\+::col}
+
+
+
+Definition at line 20 of file Flying\+\_\+enemy.\+h.
+
+\hypertarget{class_flying__enemy_a4c36026231ab03d14c8b3429c026c2ad}{}\label{class_flying__enemy_a4c36026231ab03d14c8b3429c026c2ad} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!corrupt\+\_\+file@{corrupt\+\_\+file}}
+\index{corrupt\+\_\+file@{corrupt\+\_\+file}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{corrupt\+\_\+file}{corrupt\_file}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Flying\+\_\+enemy\+::corrupt\+\_\+file}
+
+
+
+Definition at line 17 of file Flying\+\_\+enemy.\+h.
+
+\hypertarget{class_flying__enemy_a4b51b8962f740ad0357420758e19d9c9}{}\label{class_flying__enemy_a4b51b8962f740ad0357420758e19d9c9} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!sound@{sound}}
+\index{sound@{sound}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily sf\+::\+Music Flying\+\_\+enemy\+::sound}
+
+
+
+Definition at line 16 of file Flying\+\_\+enemy.\+h.
+
+\hypertarget{class_flying__enemy_a27b52e8aef1f1164bf61e8ef0d16428c}{}\label{class_flying__enemy_a27b52e8aef1f1164bf61e8ef0d16428c} 
+\index{Flying\+\_\+enemy@{Flying\+\_\+enemy}!vindu@{vindu}}
+\index{vindu@{vindu}!Flying\+\_\+enemy@{Flying\+\_\+enemy}}
+\subsubsection{\texorpdfstring{vindu}{vindu}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Flying\+\_\+enemy\+::vindu}
+
+
+
+Definition at line 19 of file Flying\+\_\+enemy.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Actor/enemy/\hyperlink{_flying__enemy_8h}{Flying\+\_\+enemy.\+h}\item 
+Actor/enemy/\hyperlink{_flying__enemy_8cpp}{Flying\+\_\+enemy.\+cpp}\end{DoxyCompactItemize}
